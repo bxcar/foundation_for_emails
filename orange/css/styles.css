@@ -68,10 +68,10 @@ table, tr, td {
 
 html {
   min-height: 100%;
-  background: #cfffff; }
+  background: #ffffff; }
 
 table.body {
-  background: #cfffff;
+  background: #ffffff;
   height: 100%;
   width: 100%; }
 
@@ -1383,7 +1383,7 @@ body.outlook p {
   padding-bottom: 16px; }
 
 .body {
-  background-color: #cfffff !important; }
+  background-color: #ffffff !important; }
 
 .no-bg {
   background: transparent !important; }
@@ -1446,3 +1446,15 @@ table.button {
 
 .text-left {
   text-align: left; }
+
+.contact {
+  text-align: right;
+  font-size: 12px;
+  line-height: 16px; }
+
+.quote-block-mail {
+  background: #ff6000;
+  font-size: 21px;
+  line-height: 24px;
+  font-family: serif;
+  color: #ffffff; }
