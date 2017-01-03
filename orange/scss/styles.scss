@@ -67,7 +67,7 @@ table.button {
     }
   }
 }
-@media only screen and (max-width: 595px) {
+/*@media only screen and (max-width: 595px) {
   .text-right, .text-left {
     text-align: center !important;
   }
@@ -76,7 +76,7 @@ table.button {
     margin-left: auto;
     margin-right: auto;
   }
-}
+}*/
 
 .text-right {
   text-align: right;
@@ -100,3 +100,7 @@ table.button {
   color: #ffffff;
 }
 
+.center-image {
+  margin-left: auto;
+  margin-right: auto;
+}

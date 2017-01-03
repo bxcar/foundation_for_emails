@@ -1434,13 +1434,16 @@ table.button {
     table.button table td a {
       padding: 0px; }
 
-@media only screen and (max-width: 595px) {
+/*@media only screen and (max-width: 595px) {
   .text-right, .text-left {
-    text-align: center !important; }
+    text-align: center !important;
+  }
+
   .center-image {
     margin-left: auto;
-    margin-right: auto; } }
-
+    margin-right: auto;
+  }
+}*/
 .text-right {
   text-align: right; }
 
@@ -1458,3 +1461,7 @@ table.button {
   line-height: 24px;
   font-family: serif;
   color: #ffffff; }
+
+.center-image {
+  margin-left: auto;
+  margin-right: auto; }
