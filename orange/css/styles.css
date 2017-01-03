@@ -1457,9 +1457,10 @@ table.button {
 
 .quote-block-mail {
   background: #ff6000;
-  font-size: 20px;
-  line-height: 22px;
-  font-family: serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: sans-serif;
+  font-weight: 300;
   color: #ffffff; }
 
 .center-image {
