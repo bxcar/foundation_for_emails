@@ -1,6 +1,6 @@
 <!-- Emails use the XHTML Strict doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mc="http://www.w3.org/1999/xhtml">
 <head>
     <!-- The character set should be utf-8 -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -20,7 +20,9 @@
 
                 <container class="no-bg" style="width: 100%; !important; max-width: 580px !important;">
                     <!-- Шапка -->
-                    <row>
+                    <row mc:repeatable="repeat_2"
+                         mc:variant="Блок с верхним логотипом"
+                         mc:repeatindex="0">
                         <columns large="12" class="custom-pb">
                             <div style="text-align: center !important;">
                                 <div style="display: inline-block !important;
@@ -29,7 +31,7 @@
                                 vertical-align: top;
                                 text-align: center !important;
                                 margin-top: 20px;">
-                                    <img class="center-image"
+                                    <img mc:edit="top_logo_image" class="center-image"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/your-logo-small.png"
                                          alt="logo">
                                 </div>
@@ -37,7 +39,8 @@
 
                                 <!--<columns large="5" class="custom-pb">-->
                                 <div style="display: inline-block !important;width:100%;max-width: 200px;/*vertical-align: top;*/">
-                                    <p class="contact" style="text-align: center; margin-top: 20px;">+7 (000)
+                                    <p mc:edit="top_contacts" class="contact"
+                                       style="text-align: center; margin-top: 20px;">+7 (000)
                                         123-45-67<br>
                                         +7 (000) 123-45-67<br>
                                         email@email.com</p>
@@ -45,7 +48,7 @@
                                     <img class="center-image"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/line-separate-1.png"
                                          alt="line-separate">
-                                    <p class="contact" style="text-align: center;
+                                    <p mc:edit="top_contacts_street" class="contact" style="text-align: center;
                                      margin-top: 10px;
                                      padding-left: 10px;">Город, ул. Улица, 1/1</p>
                                     <!-- <img class="center-image" src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/separate.png"
@@ -138,14 +141,15 @@
                     <!-- Картинка с текстом справа -->
                     <row>
                         <columns large="12">
-                            <div style="text-align: center !important;">
+                            <div style="text-align: center !important;" mc:repeatable="repeat_2"
+                                 mc:variant="Блок с боковым изображением" mc:repeatindex="0">
                                 <div style="text-align: center !important;
                                 display: inline-block !important;
                                 width:100%;
                                 max-width: 184px;
                                 vertical-align: top;
                                 /*margin-top: 20px;*/">
-                                    <img style="display: inline-block;"
+                                    <img mc:edit="left_image" style="display: inline-block;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/man-user.png"
                                          alt="user">
                                 </div>
@@ -158,7 +162,8 @@
                                  width:100%;
                                  max-width: 350px;
                                  vertical-align: top;
-                                 margin-top: 20px">Туристическая компания - это в первую очередь
+                                 margin-top: 20px"
+                                   mc:edit="right_text">Туристическая компания - это в первую очередь
                                     Команда заряженных и любящих свою работу
                                     профессионалов в области организации путешествий и создания впечатлений!
                                     Согласитесь, так трудно найти надёжную, стабильную и близкую по духу компанию,
@@ -180,7 +185,10 @@
                                 max-width: 530px;
                                 margin-left: auto;
                                 margin-right: auto;
-                                /*width:100%;*/">Мы не просто любим, но и умеем наслаждаться
+                                /*width:100%;*/"
+                               mc:repeatable="repeat_2"
+                               mc:variant="Блок с основным текстом"
+                               mc:repeatindex="0">Мы не просто любим, но и умеем наслаждаться
                                 этой жизнью, и хотим разделить это прекрасное
                                 чувство с Вами!
                                 Ведь что может быть приятнее, чем увидеть глаза человека, которого переполняет
@@ -197,12 +205,17 @@
                     <row>
                         <columns small="12" large="12">
                             <h2 class="text-left" style="font-size: 24px; font-family: serif; /*padding-left: 10px;*/
-                            text-align: center;">Заголовок</h2>
+                            text-align: center;"
+                                mc:repeatable="repeat_2"
+                                mc:variant="Заголовок к предложениям"
+                                mc:repeatindex="0">Заголовок</h2>
                         </columns>
                     </row>
 
                     <!--Плиточки-->
-                    <row>
+                    <row mc:repeatable="repeat_2"
+                         mc:variant="Блок с предложениями"
+                         mc:repeatindex="0">
                         <columns small="12" large="12">
                             <div style="text-align: center !important;">
                                 <div style="
@@ -211,12 +224,14 @@
                              width: 100%;
                               max-width: 240px;
                               padding: 10px;">
-                                    <img style="width: 100% !important"
+                                    <img mc:edit="country_1_image" style="width: 100% !important"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
                                          alt="photo-small">
                                     <spacer size="10"></spacer>
-                                    <p style="padding-left: 10px;"><strong>Сочи,</strong> Россия</p>
-                                    <p style="font-size: 12px; line-height: 14px; padding-left: 10px;">Бархатные
+                                    <p style="padding-left: 10px;" mc:edit="country_1_town"><strong>Сочи,</strong>
+                                        Россия</p>
+                                    <p style="font-size: 12px; line-height: 14px; padding-left: 10px;"
+                                       mc:edit="country_1_description">Бархатные
                                         сезоны<br>
                                         Город - Отель 3*<br>
                                         с 24.02., 3 ночи
@@ -227,7 +242,8 @@
                                         <tr>
                                             <td style="vertical-align: bottom;">
                                                 <p style="background-color: #fe3030; font-size: 18px; color: #fff; font-weight: bold;
-                                        padding: 6px 0 5px 12px; font-family: serif; margin-bottom: 0;">806 $</p>
+                                        padding: 6px 0 5px 12px; font-family: serif; margin-bottom: 0;"
+                                                   mc:edit="country_1_price">806 $</p>
                                             </td>
                                             <td style="vertical-align: bottom;">
                                                 <img src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/arrow.png">
@@ -258,12 +274,14 @@
                              width: 100%;
                              max-width: 240px;
                              padding: 10px;">
-                                    <img style="width: 100% !important;"
+                                    <img mc:edit="country_2_image" style="width: 100% !important;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
                                          alt="photo-small">
                                     <spacer size="10"></spacer>
-                                    <p style="padding-left: 10px;"><strong>Гагра,</strong> Абхазия</p>
-                                    <p style="font-size: 12px; line-height: 14px; padding-left: 10px;">Название
+                                    <p style="padding-left: 10px;" mc:edit="country_2_town"><strong>Гагра,</strong>
+                                        Абхазия</p>
+                                    <p style="font-size: 12px; line-height: 14px; padding-left: 10px;"
+                                       mc:edit="country_2_description">Название
                                         города<br>
                                         Белые Скалы 3*<br>
                                         c 01.03, 3 ночи
@@ -274,7 +292,8 @@
                                         <tr>
                                             <td style="vertical-align: bottom;">
                                                 <p style="background-color: #fe3030; font-size: 18px; color: #fff; font-weight: bold;
-                                        padding: 6px 0 5px 12px; font-family: serif; margin-bottom: 0;">7 391 $</p>
+                                        padding: 6px 0 5px 12px; font-family: serif; margin-bottom: 0;"
+                                                   mc:edit="country_2_price">7 391 $</p>
                                             </td>
                                             <td style="vertical-align: bottom;">
                                                 <img src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/arrow.png">
@@ -302,7 +321,10 @@
 
                     <!--Текст с самолетиком-->
                     <div style="background: #ff6000;
-                    border-radius: 5px;">
+                    border-radius: 5px;"
+                         mc:repeatable="repeat_2"
+                         mc:variant="Блок c цитатой"
+                         mc:repeatindex="0">
                         <spacer size="15"></spacer>
                         <row>
                             <div>
@@ -315,7 +337,8 @@
                         <row>
                             <div>
                                 <columns large="12" style="padding-bottom: 0;">
-                                    <p style="padding-left: 96px; margin-bottom: 0;" class="quote-block-mail"><i>Показать
+                                    <p style="padding-left: 96px; margin-bottom: 0;" class="quote-block-mail"
+                                       mc:edit="country_2_quote"><i>Показать
                                         людям, что такое настоящий европейский сервис и помочь им увидеть мир -
                                         вот для чего я создала (Название)</i></p>
                                 </columns>
@@ -363,7 +386,9 @@
                         </columns>
                     </row>-->
                     <spacer size="10"></spacer>
-                    <row>
+                    <row mc:repeatable="repeat_2"
+                         mc:variant="Блок c большим фото"
+                         mc:repeatindex="0">
                         <columns small="12" large="12" style="padding-left: 0 !important;
                          padding-right: 0 !important;
                          padding-bottom: 0 !important;">
@@ -376,7 +401,7 @@
                               max-width: 600px;
                               /*padding: 10px;*/
                               /*padding-top: 10px;*/">
-                                    <img style="width: 100% !important;
+                                    <img mc:edit="big_photo" style="width: 100% !important;
                                     border-radius: 5px;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-big.png"
                                          alt="photo-small">
@@ -434,25 +459,29 @@
 
                     <!--Плиточки для стран-->
                     <!--1-->
-                    <row>
-                        <columns small="12" large="12">
-                            <div style="/*text-align: center !important;*/">
-                                <div style="
-                            display: inline-block;
-                            background: #fff;
-                             width: 100%;
+                    <div mc:repeatable="repeat_2"
+                         mc:variant="Блок стран"
+                         mc:repeatindex="0">
+                        <row>
+                            <columns small="12" large="12">
+                                <div style="/*text-align: center !important;*/">
+                                    <div style="
+                              display: inline-block;
+                              background: #fff;
+                              width: 100%;
                               max-width: 580px;
                               padding: 10px;
                               padding-left: 0;">
-                                    <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <div style="width: 47%; display: inline-block; padding-right: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_1">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_1_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -461,27 +490,28 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$ на двоих
-                                        </a>
-                                        <spacer size="10"></spacer>
-                                        <!--</div>-->
-                                    </div>
+                                            </a>
+                                            <spacer size="10"></spacer>
+                                            <!--</div>-->
+                                        </div>
 
 
-                                    <!--<div style="
-                                 display: inline-block;
-                                 background: #fff;
-                                 width: 100%;
-                                 max-width: 240px;
-                                 padding: 10px;">-->
-                                    <div style="width: 47%; display: inline-block; padding-left: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <!--<div style="
+                                     display: inline-block;
+                                     background: #fff;
+                                     width: 100%;
+                                     max-width: 240px;
+                                     padding: 10px;">-->
+                                        <div style="width: 47%; display: inline-block; padding-left: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_2">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_2_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -490,35 +520,36 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 475$ на двоих
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <spacer size="10"></spacer>
                                 </div>
-                                <spacer size="10"></spacer>
-                            </div>
-                        </columns>
-                    </row>
-                    <!--//1-->
+                            </columns>
+                        </row>
+                        <!--//1-->
 
-                    <!--2-->
-                    <row>
-                        <columns small="12" large="12">
-                            <div style="/*text-align: center !important;*/">
-                                <div style="
+                        <!--2-->
+                        <row>
+                            <columns small="12" large="12">
+                                <div style="/*text-align: center !important;*/">
+                                    <div style="
                             display: inline-block;
                             background: #fff;
                              width: 100%;
                               max-width: 580px;
                               padding: 10px;
                               padding-left: 0;">
-                                    <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <div style="width: 47%; display: inline-block; padding-right: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_3">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_3_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -527,27 +558,28 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$ на двоих
-                                        </a>
-                                        <spacer size="10"></spacer>
-                                        <!--</div>-->
-                                    </div>
+                                            </a>
+                                            <spacer size="10"></spacer>
+                                            <!--</div>-->
+                                        </div>
 
 
-                                    <!--<div style="
-                                 display: inline-block;
-                                 background: #fff;
-                                 width: 100%;
-                                 max-width: 240px;
-                                 padding: 10px;">-->
-                                    <div style="width: 47%; display: inline-block; padding-left: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <!--<div style="
+                                     display: inline-block;
+                                     background: #fff;
+                                     width: 100%;
+                                     max-width: 240px;
+                                     padding: 10px;">-->
+                                        <div style="width: 47%; display: inline-block; padding-left: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_4">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_4_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -556,35 +588,36 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 475$ на двоих
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <spacer size="10"></spacer>
                                 </div>
-                                <spacer size="10"></spacer>
-                            </div>
-                        </columns>
-                    </row>
-                    <!--//2-->
+                            </columns>
+                        </row>
+                        <!--//2-->
 
-                    <!--3-->
-                    <row>
-                        <columns small="12" large="12">
-                            <div style="/*text-align: center !important;*/">
-                                <div style="
+                        <!--3-->
+                        <row>
+                            <columns small="12" large="12">
+                                <div style="/*text-align: center !important;*/">
+                                    <div style="
                             display: inline-block;
                             background: #fff;
                              width: 100%;
                               max-width: 580px;
                               padding: 10px;
                               padding-left: 0;">
-                                    <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <div style="width: 47%; display: inline-block; padding-right: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_5">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_5_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -593,27 +626,28 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$ на двоих
-                                        </a>
-                                        <spacer size="10"></spacer>
-                                        <!--</div>-->
-                                    </div>
+                                            </a>
+                                            <spacer size="10"></spacer>
+                                            <!--</div>-->
+                                        </div>
 
 
-                                    <!--<div style="
-                                 display: inline-block;
-                                 background: #fff;
-                                 width: 100%;
-                                 max-width: 240px;
-                                 padding: 10px;">-->
-                                    <div style="width: 47%; display: inline-block; padding-left: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <!--<div style="
+                                     display: inline-block;
+                                     background: #fff;
+                                     width: 100%;
+                                     max-width: 240px;
+                                     padding: 10px;">-->
+                                        <div style="width: 47%; display: inline-block; padding-left: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_6">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_6_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -622,35 +656,36 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 475$ на двоих
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <spacer size="10"></spacer>
                                 </div>
-                                <spacer size="10"></spacer>
-                            </div>
-                        </columns>
-                    </row>
-                    <!--//3-->
+                            </columns>
+                        </row>
+                        <!--//3-->
 
-                    <!--4-->
-                    <row>
-                        <columns small="12" large="12">
-                            <div style="/*text-align: center !important;*/">
-                                <div style="
+                        <!--4-->
+                        <row>
+                            <columns small="12" large="12">
+                                <div style="/*text-align: center !important;*/">
+                                    <div style="
                             display: inline-block;
                             background: #fff;
                              width: 100%;
                               max-width: 580px;
                               padding: 10px;
                               padding-left: 0;">
-                                    <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <div style="width: 47%; display: inline-block; padding-right: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_7">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_7_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -659,27 +694,28 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$ на двоих
-                                        </a>
-                                        <spacer size="10"></spacer>
-                                        <!--</div>-->
-                                    </div>
+                                            </a>
+                                            <spacer size="10"></spacer>
+                                            <!--</div>-->
+                                        </div>
 
 
-                                    <!--<div style="
-                                 display: inline-block;
-                                 background: #fff;
-                                 width: 100%;
-                                 max-width: 240px;
-                                 padding: 10px;">-->
-                                    <div style="width: 47%; display: inline-block; padding-left: 2%;">
-                                        <h2 style="text-align: center;">Страна</h2>
-                                        <spacer size="10"></spacer>
-                                        <img style="width: 100% !important;
+                                        <!--<div style="
+                                     display: inline-block;
+                                     background: #fff;
+                                     width: 100%;
+                                     max-width: 240px;
+                                     padding: 10px;">-->
+                                        <div style="width: 47%; display: inline-block; padding-left: 2%;">
+                                            <h2 style="text-align: center;" mc:edit="min_country_8">Страна</h2>
+                                            <spacer size="10"></spacer>
+                                            <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <a style="max-width: 100% !important;
+                                                 mc:edit="min_country_8_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <a style="max-width: 100% !important;
                                         background: #fc4a4a;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -688,14 +724,15 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 475$ на двоих
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <spacer size="10"></spacer>
                                 </div>
-                                <spacer size="10"></spacer>
-                            </div>
-                        </columns>
-                    </row>
-                    <!--//4-->
+                            </columns>
+                        </row>
+                        <!--//4-->
+                    </div>
                     <!--//Плиточки для стран-->
 
                     <!--Кнопка-->
@@ -705,7 +742,10 @@
 
                     <spacer size="20"></spacer>
                     <!--Меню и соцсети-->
-                    <row style="background: #ff6000;">
+                    <row style="background: #ff6000;"
+                         mc:repeatable="repeat_2"
+                         mc:variant="Блок меню"
+                         mc:repeatindex="0">
                         <columns small="12" large="6" style="padding-bottom: 0;">
                             <div style="text-align: center;">
                                 <div style="text-align: center;
@@ -754,7 +794,9 @@
                     <spacer size="20"></spacer>
 
                     <!--Префутер-->
-                    <row>
+                    <row mc:repeatable="repeat_2"
+                         mc:variant="Блок с нижним логотипом"
+                         mc:repeatindex="0">
                         <columns large="12" class="custom-pb">
                             <div style="text-align: center !important;">
                                 <div style="display: inline-block;width:100%;
@@ -762,7 +804,7 @@
                                 vertical-align: top;
                                 text-align: center !important;
                                 margin-top: 20px;">
-                                    <img class="center-image"
+                                    <img mc:edit="bottom_logo_image" class="center-image"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/your-logo-small.png"
                                          alt="logo">
                                 </div>
@@ -770,7 +812,7 @@
 
                                 <!--<columns large="5" class="custom-pb">-->
                                 <div style="display: inline-block;width:100%;max-width: 200px;/*vertical-align: top;*/">
-                                    <p class="contact" style="text-align: center; margin-top: 20px;">+7 (000)
+                                    <p mc:edit="bottom_contacts" class="contact" style="text-align: center; margin-top: 20px;">+7 (000)
                                         123-45-67<br>
                                         +7 (000) 123-45-67<br>
                                         email@email.com</p>
@@ -778,7 +820,7 @@
                                     <img class="center-image"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/line-separate-1.png"
                                          alt="line-separate">
-                                    <p class="contact" style="text-align: center;
+                                    <p mc:edit="bottom_contacts_street" class="contact" style="text-align: center;
                                      margin-top: 10px;
                                      padding-left: 10px;">Город, ул. Улица, 1/1</p>
                                 </div>
@@ -790,9 +832,11 @@
                     <spacer size="15"></spacer>
 
                     <!--Отписка-->
-                    <row>
+                    <row mc:repeatable="repeat_2"
+                         mc:variant="Блок отписаться"
+                         mc:repeatindex="0">
                         <columns large="12" style="background: #ff6000; padding-bottom: 0;">
-                            <p style="color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; font-size: 10px;">
+                            <p mc:edit="unsubscribe" style="color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; font-size: 10px;">
                                 <a href="http://makintour.com/o_kompanii/"
                                    style="color: #fff; line-height: 20px; text-decoration: underline;">отписаться от
                                     рассылки</a>
