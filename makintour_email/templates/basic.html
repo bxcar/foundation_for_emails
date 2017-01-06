@@ -23,36 +23,35 @@
                     <row mc:repeatable="repeat_2"
                          mc:variant="Блок с верхним логотипом"
                          mc:repeatindex="0">
-                        <columns large="12" class="custom-pb">
+                        <columns large="12" style="padding-bottom: 0 !important;">
                             <div style="text-align: center !important;">
                                 <div style="display: inline-block !important;
-                                width:100%;
-                                max-width: 320px;
-                                vertical-align: top;
+                                width:50%;
+                                float: left;
+                                /*max-width: 320px;*/
+                                /*vertical-align: top;*/
                                 text-align: center !important;
                                 margin-top: 20px;">
-                                    <img mc:edit="top_logo_image" class="center-image"
+                                    <img mc:edit="top_logo_image"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png"
                                          alt="logo">
                                 </div>
                                 <!--</columns>-->
 
                                 <!--<columns large="5" class="custom-pb">-->
-                                <div style="display: inline-block !important;width:100%;max-width: 200px;/*vertical-align: top;*/">
-                                    <p mc:edit="top_contacts" class="contact"
-                                       style="text-align: center; margin-top: 20px;">+7 (000)
-                                        123-45-67<br>
-                                        +7 (000) 123-45-67<br>
-                                        email@email.com</p>
-                                    <spacer size="10"></spacer>
-                                    <img class="center-image"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/line-separate-1.png"
-                                         alt="line-separate">
-                                    <p mc:edit="top_contacts_street" class="contact" style="text-align: center;
-                                     margin-top: 10px;
-                                     padding-left: 10px;">Город, ул. Улица, 1/1</p>
-                                    <!-- <img class="center-image" src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/separate.png"
-                                          alt="">-->
+                                <div style="display: inline-block !important;width:50%; float: right;">
+                                    <div mc:edit="top_contacts" class="contact"
+                                         style="text-align: right; margin-top: 20px;
+                                       color: #474747">Хотите на отдых?
+                                        <strong>Позвоните нам!</strong><br>
+                                        <div>
+                                            <img style="display: inline-block;
+                                        position: relative;
+                                        top: 2px;"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/tel.png">
+                                            <span style="font-size: 19px; font-weight: 700; color: #ec008c;">0 800 800 025</span><br>
+                                        </div>
+                                        <strong>Звонки бесплатные по всей Украине</strong></div>
                                 </div>
                             </div>
                         </columns>
@@ -138,17 +137,19 @@
                                          alt="underline">
                                 </div>
 
-                                <p style="font-size: 17px;
-                                 line-height: 22px;
+                                <p style="font-size: 14px;
+                                 line-height: 20px;
                                  display: inline-block;
                                  width:100%;
                                  vertical-align: top;
-                                 margin-top: 20px"
-                                   mc:edit="right_text">Туристическая компания - это в первую очередь
-                                    Команда заряженных и любящих свою работу
-                                    профессионалов в области организации путешествий и создания впечатлений!
-                                    Согласитесь, так трудно найти надёжную, стабильную и близкую по духу компанию,
-                                    которой хотелось бы доверять приятные и захватывающие моменты жизни.</p>
+                                 margin-top: 20px;
+                                 color: #474747;"
+                                   mc:edit="right_text">Когда за окном пасмурно и холодно, все больше и приятней
+                                    думается об отдыхе. Именно сейчас, в декабре, еще перед Новогодней суматохой
+                                    и праздниками можно действительно выгодно отдохнуть.
+                                    Мы подготовили для Вас ТОП-5 самых выгодных и ярких направлений отдыха,
+                                    куда можно отправится в ближайшее время и зарядится
+                                    положительными эмоциями на всю зиму!</p>
                             </div>
                         </columns>
                     </row>
@@ -159,8 +160,10 @@
                     <!--Здесь пишем продающий заголовок-->
                     <row>
                         <columns small="12" large="12">
-                            <h2 class="text-left" style="font-size: 24px; font-family: serif; /*padding-left: 10px;*/
-                            text-align: center;"
+                            <h2 class="text-left" style="font-size: 35px; /*padding-left: 10px;*/
+                            text-align: center;
+                            color: #ec008c;
+                            font-weight: 300;"
                                 mc:repeatable="repeat_2"
                                 mc:variant="Заголовок к предложениям"
                                 mc:repeatindex="0">Здесь пишем продающий заголовок</h2>
@@ -193,24 +196,21 @@
                         <columns small="12" large="6">
                             <!--<div style="text-align: center !important;">-->
                             <p style="/*display: inline-block;*/
-                                font-size: 17px;
-                                line-height: 22px;
+                                font-size: 14px;
+                                line-height: 20px;
                                 max-width: 580px;
                                 margin-left: auto;
                                 margin-right: auto;
                                 text-align: center;
+                                color: #474747;
                                 /*width:100%;*/"
                                mc:repeatable="repeat_2"
                                mc:variant="Блок с основным текстом"
-                               mc:repeatindex="0">Мы не просто любим, но и умеем наслаждаться
-                                этой жизнью, и хотим разделить это прекрасное
-                                чувство с Вами!
-                                Ведь что может быть приятнее, чем увидеть глаза человека, которого переполняет
-                                счастье
-                                от полученных положительных эмоций. Наша цель - стать другом Вам, каждому человеку,
-                                который хочет увидеть яркие краски жизни, и наполнить себя новыми впечатлениями!
-                                Ведь что может быть приятнее, чем увидеть глаза человека, которого переполняет
-                                счастье.</p>
+                               mc:repeatindex="0">Египет — одно из самых популярных направлений среди украинцев.
+                                Декабрь – месяц комфортного и спокойного отдыха в Египте, когда нет летнего зноя
+                                и температура удобна для отдыха. Ведь что может быть приятнее,
+                                чем переместиться из холода и непогоды на роскошный пляж в экзотической
+                                стране и получить заряд позитива и тепла перед долгой и холодной зимой?</p>
                             <!--</div>-->
                         </columns>
                     </row>
@@ -229,61 +229,86 @@
                              width: 100%;
                               max-width: 275px;
                               padding: 5px;">
-                                    <img mc:edit="country_1_image" style="width: 100% !important"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
-                                         alt="photo-small">
-                                    <spacer size="10"></spacer>
-                                    <p style="text-align: center;" mc:edit="country_1_town"><strong>
-                                        Xperience Kiroseiz Parkland 5*
-                                    </strong></p>
-                                    <p style="font-size: 12px; line-height: 14px;
-                                     text-align: center;"
-                                       mc:edit="country_1_description">
-                                        8 дней<br>
-                                        Все включено<br>
-                                        <span>195$</span>
-                                        <a style="max-width: 100% !important;
-                                        background: #fc4a4a;
-                                        color: #ffffff;
-                                        font-size: 14px;
-                                        border-radius: 4px;
+                                    <div style="border: 1px solid #c6c6c6;
+                              border-radius: 4px;
+                              padding-bottom: 23px;">
+                                        <img mc:edit="country_1_image" style="width: 100% !important"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
+                                             alt="photo-small">
+                                        <spacer size="10"></spacer>
+                                        <p style="text-align: center;
+                                    font-size: 17px;
+                                    margin-bottom: 5px;" mc:edit="country_1_town"><strong>
+                                            Xperience Kiroseiz Parkland 5*
+                                        </strong></p>
+                                        <div style="text-align: center;
+                                    line-height: 17px;"
+                                             mc:edit="country_1_description">
+                                            8 дней<br>
+                                            Все включено<br>
+                                            <spacer size="5"></spacer>
+                                            <p style="font-size: 40px; color: #00aeef;
+                                        text-align: center;
+                                        line-height: 45px;">195$</p>
+                                            <a style="width: 142px;
                                         display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        background: #00aeef;
+                                        color: #ffffff;
+                                        font-size: 18px;
+                                        border-radius: 7px;
                                         text-decoration: none;
-                                        padding: 7px;
+                                        padding: 8px;
+                                        padding-top: 10px;
                                         text-align: center;" href="#">Заказать
-                                        </a>
-                                    </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div style="
-                             display: inline-block;
-                             background: #fff;
+                            display: inline-block;
+                            background: #fff;
                              width: 100%;
-                             max-width: 275px;
-                             padding: 5px;">
-                                    <img mc:edit="country_2_image" style="width: 100% !important;"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
-                                         alt="photo-small">
-                                    <spacer size="10"></spacer>
-                                    <p style="text-align: center;" mc:edit="country_2_town"><strong>Гагра,</strong>
-                                        Абхазия</p>
-                                    <p style="font-size: 12px; line-height: 14px;
-                                     text-align: center;"
-                                       mc:edit="country_2_description">
-                                        8 дней<br>
-                                        Все включено<br>
-                                        <span>195$</span>
-                                        <a style="max-width: 100% !important;
-                                        background: #fc4a4a;
-                                        color: #ffffff;
-                                        font-size: 14px;
-                                        border-radius: 4px;
+                              max-width: 275px;
+                              padding: 5px;">
+                                    <div style="border: 1px solid #c6c6c6;
+                              border-radius: 4px;
+                              padding-bottom: 23px;">
+                                        <img mc:edit="country_1_image" style="width: 100% !important"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
+                                             alt="photo-small">
+                                        <spacer size="10"></spacer>
+                                        <p style="text-align: center;
+                                    font-size: 17px;
+                                    margin-bottom: 5px;" mc:edit="country_1_town"><strong>
+                                            Xperience Kiroseiz Parkland 5*
+                                        </strong></p>
+                                        <div style="text-align: center;
+                                    line-height: 17px;"
+                                             mc:edit="country_1_description">
+                                            8 дней<br>
+                                            Все включено<br>
+                                            <spacer size="5"></spacer>
+                                            <p style="font-size: 40px; color: #00aeef;
+                                        text-align: center;
+                                        line-height: 45px;">195$</p>
+                                            <a style="width: 142px;
                                         display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        background: #00aeef;
+                                        color: #ffffff;
+                                        font-size: 18px;
+                                        border-radius: 7px;
                                         text-decoration: none;
-                                        padding: 7px;
+                                        padding: 8px;
+                                        padding-top: 10px;
                                         text-align: center;" href="#">Заказать
-                                        </a>
-                                    </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </columns>
@@ -519,8 +544,9 @@
                                                 title="google+"><img
                                                 alt="google+" height="36"
                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/gg.png""
-                                                style="text-decoration: none; vertical-align: top; max-width: 100%; border: none;"
-                                                width="39"></a>
+                                            style="text-decoration: none; vertical-align: top; max-width: 100%; border:
+                                            none;"
+                                            width="39"></a>
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a
@@ -582,8 +608,10 @@
                                     сети туристических агентств MAKINTOUR
                                 </p>
                                 <div>
-                                    <img style="display: inline-block;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/coral.png">
-                                    <img style="display: inline-block;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/tui.png">
+                                    <img style="display: inline-block;"
+                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/coral.png">
+                                    <img style="display: inline-block;"
+                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/tui.png">
                                 </div>
                                 <p style="text-align: center;">
                                     Добавьте наш адрес email@makintour.com в список ваших контактов,
