@@ -316,40 +316,60 @@
 
                     <!--Цитата-->
                     <div style="background: #dbdbdb;
-                    border-radius: 5px;"
-                         mc:repeatable="repeat_2"
+                    " mc:repeatable="repeat_2"
                          mc:variant="Блок c цитатой"
                          mc:repeatindex="0">
                         <spacer size="15"></spacer>
                         <row>
                             <div>
                                 <columns large="12" style="padding-bottom: 0;">
-                                    <img style="padding-left: 30px;"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/quote.png">
+                                    <div>
+                                        <div style="width: 3%; display: inline-block;
+                                        padding-left: 10px;
+                                    vertical-align: top;">
+                                            <img
+                                                    src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/quote.png">
+                                        </div>
+                                        <div style="display: inline-block;
+                                        width: 93%;">
+                                            <p style="padding-left: 16px; margin-bottom: 0;
+                                            font-size: 17px;
+                                            color: #454545;" class="quote-block-mail"
+                                               mc:edit="country_2_quote"><i>Порой отдых может стать делом <strong>всей
+                                                твоей жизни!</strong>
+                                                Напишем сюда еще какую-то цитату</i></p>
+                                        </div>
+                                    </div>
                                 </columns>
                             </div>
                         </row>
-                        <row>
-                            <div>
-                                <columns large="12" style="padding-bottom: 0;">
-                                    <p style="padding-left: 96px; margin-bottom: 0;" class="quote-block-mail"
-                                       mc:edit="country_2_quote"><i>Показать
-                                        людям, что такое настоящий европейский сервис и помочь им увидеть мир -
-                                        вот для чего я создала (Название)</i></p>
-                                </columns>
-                            </div>
-                        </row>
+                        <spacer size="15"></spacer>
                     </div>
 
                     <spacer size="10"></spacer>
+                    <!--Заголовок страны-->
+                    <row>
+                        <columns small="12" large="12" style="padding-top: 0 !important;">
+                            <h2 class="text-left" style="font-size: 45px; /*padding-left: 10px;*/
+                            text-align: center;
+                            color: #ec008c;
+                            font-weight: 300;"
+                                mc:repeatable="repeat_2"
+                                mc:variant="Заголовок к предложениям"
+                                mc:repeatindex="0">ОАЭ</h2>
+                        </columns>
+                    </row>
+
                     <row mc:repeatable="repeat_2"
                          mc:variant="Блок со страной подробный"
                          mc:repeatindex="0">
                         <columns small="12" large="12" style="padding-left: 0 !important;
                          padding-right: 0 !important;
                          padding-bottom: 0 !important;">
-                            <div style="text-align: center !important;">
-                                <div style="
+                            <div style=" border: 1px solid #c6c6c6;
+                              border-radius: 4px;">
+                                <div>
+                                    <div style="
                             display: block;
                             background: transparent;
                              width: 100%;
@@ -357,45 +377,65 @@
                               max-width: 600px;
                               /*padding: 10px;*/
                               /*padding-top: 10px;*/">
-                                    <img mc:edit="big_photo" style="width: 100% !important;
-                                    border-radius: 5px;"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo2.png"
-                                         alt="photo-small">
-                                    <!--<spacer size="10"></spacer>-->
-                                </div>
-                                <!--<div style="
-                             display: block;
-                             background: #fff;
-                             width: 100%;
-                             max-width: 600px;
-                             padding-top: 10px;">
-                                </div>-->
-                                <p style="font-size: 17px;
-                                 line-height: 22px;
+                                        <img mc:edit="big_photo" style="width: 100% !important;"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo2.png"
+                                             alt="photo-small">
+                                        <!--<spacer size="10"></spacer>-->
+                                    </div>
+                                    <!--<div style="
+                                 display: block;
+                                 background: #fff;
+                                 width: 100%;
+                                 max-width: 600px;
+                                 padding-top: 10px;">
+                                    </div>-->
+                                    <p style="font-size: 14px;
+                                 line-height: 20px;
                                  display: inline-block;
-                                 width:100%;
                                  vertical-align: top;
-                                 margin-top: 20px"
-                                   mc:edit="right_text">Туристическая компания - это в первую очередь
-                                    Команда заряженных и любящих свою работу
-                                    профессионалов в области организации путешествий и создания впечатлений!
-                                    Согласитесь, так трудно найти надёжную, стабильную и близкую по духу компанию,
-                                    которой хотелось бы доверять приятные и захватывающие моменты жизни.</p>
-                                <p style="float: left;">от 342 $</p>
-                                <a style="width: 180px; !important;
-                                        background: #fc4a4a;
-                                        float:right;
-                                        color: #ffffff;
-                                        font-size: 14px;
-                                        border-radius: 4px;
+                                 margin-top: 20px;
+                                 color: #474747;
+                                 text-align: center;
+                                 padding-left: 20px;
+                                 padding-right: 20px;"
+                                       mc:edit="right_text">Туры в ОАЭ – это незабываемый сказочный отдых в стране
+                                        будущего, это яркое солнце 365 дней в году и теплое чистое море,
+                                        завораживающие пейзажи пустыни с оазисами и высокими песчаными дюнами
+                                        (в каждом эмирате свой </p>
+                                    <spacer size="10"></spacer>
+                                    <p style="font-size: 35px; color: #00aeef;
+                                        line-height: 35px;
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        margin-left: 20px;
+                                        margin-right: auto;
+                                        "><span style="font-size: 25px">от</span> 342
+                                        <span style="font-size: 25px">$</span></p>
+                                    <div style="display: inline-block;
+                                        float: right;
+                                        vertical-align: top;">
+                                        <a style="width: 180px;
                                         display: block;
+                                        margin-left: auto;
+                                        margin-right: 20px;
+                                        background: #00aeef;
+                                        color: #ffffff;
+                                        font-size: 18px;
+                                        border-radius: 5px;
                                         text-decoration: none;
-                                        padding: 7px;
-                                        text-align: center;" href="#">Заказать
-                                </a>
+                                        padding: 8px;
+                                        padding-top: 10px;
+                                        text-align: center;
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)" href="#">Хочу в ОАЭ
+                                        </a>
+                                    </div>
+                                    <spacer size="30"></spacer>
+                                </div>
                             </div>
                         </columns>
                     </row>
+
+                    <spacer size="50"></spacer>
 
 
                     <!--Плиточки для стран-->
@@ -404,7 +444,7 @@
                          mc:variant="Блок стран"
                          mc:repeatindex="0">
                         <row>
-                            <columns small="12" large="12">
+                            <columns small="12" large="12" style="padding-bottom: 0;">
                                 <div style="/*text-align: center !important;*/">
                                     <div style="
                               display: inline-block;
@@ -414,7 +454,8 @@
                               padding: 10px;
                               padding-left: 0;">
                                         <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                            <h2 style="text-align: center;" mc:edit="min_country_1">Шри Ланка</h2>
+                                            <h2 style="text-align: center;
+                                            font-size: 24px;" mc:edit="min_country_1">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
                                     border-radius: 5px;"
@@ -423,14 +464,14 @@
                                                  alt="photo-small">
                                             <spacer size="10"></spacer>
                                             <a style="max-width: 100% !important;
-                                        background: #fc4a4a;
+                                        background: #00aeef;
                                         color: #ffffff;
                                         font-size: 14px;
                                         border-radius: 4px;
                                         display: block;
                                         text-decoration: none;
                                         padding: 7px;
-                                        text-align: center;" href="#">от 350$ на двоих
+                                        text-align: center;" href="#">от 350$
                                             </a>
                                             <spacer size="10"></spacer>
                                             <!--</div>-->
@@ -443,28 +484,30 @@
                                      width: 100%;
                                      max-width: 240px;
                                      padding: 10px;">-->
-                                        <div style="width: 47%; display: inline-block; padding-left: 2%;">
-                                            <h2 style="text-align: center;" mc:edit="min_country_2">Шри Ланка</h2>
+                                        <div style="width: 47%; display: inline-block; padding-right: 2%;">
+                                            <h2 style="text-align: center;
+                                            font-size: 24px;" mc:edit="min_country_1">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                                 mc:edit="min_country_2_image"
+                                                 mc:edit="min_country_1_image"
                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
                                                  alt="photo-small">
                                             <spacer size="10"></spacer>
                                             <a style="max-width: 100% !important;
-                                        background: #fc4a4a;
+                                        background: #00aeef;
                                         color: #ffffff;
                                         font-size: 14px;
                                         border-radius: 4px;
                                         display: block;
                                         text-decoration: none;
                                         padding: 7px;
-                                        text-align: center;" href="#">от 475$ на двоих
+                                        text-align: center;" href="#">от 350$
                                             </a>
+                                            <spacer size="10"></spacer>
+                                            <!--</div>-->
                                         </div>
                                     </div>
-                                    <spacer size="10"></spacer>
                                 </div>
                             </columns>
                         </row>
@@ -472,14 +515,27 @@
                     </div>
                     <!--//Плиточки для стран-->
 
-                    <p>* Цена указана за одного человека при двухместном размещении.
-                        В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
+                    <p style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">* Цена указана за одного человека при двухместном размещении.
+                        <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
                     </p>
 
                     <!--Кнопка-->
-                    <a href="http://makintour.com"><img style="margin-left: auto; margin-right: auto;"
-                                                        src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/site-button.png"
-                                                        alt="makintour.com"></a>
+                    <a style="width: 180px;
+                                        display: block;
+                                        background: #00aeef;
+                                        margin-right: auto;
+                                        margin-left: auto;
+                                        color: #ffffff;
+                                        font-size: 18px;
+                                        border-radius: 5px;
+                                        text-decoration: none;
+                                        padding: 8px;
+                                        padding-top: 10px;
+                                        text-align: center;
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)" href="#">Перейти на сайт
+                    </a>
+
+                    <spacer size="50"></spacer>
                     <!--Форма поиска-->
                     <a href="http://makintour.com"><img style="margin-left: auto; margin-right: auto;"
                                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png"
