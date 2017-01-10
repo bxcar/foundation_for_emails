@@ -1466,6 +1466,9 @@ table.button {
     display: none !important; }
   .bottom-tel-2 {
     margin-top: -16px !important; }
+  /*.bottom-tel-mg {
+    margin-top: -10px !important;
+  }*/
   .quote-block-mail {
     font-size: 14px !important; }
   .sell-h {
