@@ -298,8 +298,8 @@
                                         <div style="width: 3%; display: inline-block;
                                         padding-left: 10px;
                                     vertical-align: top;">
-                                            <img  mc:edit="quote_image"
-                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/quote.png">
+                                            <img mc:edit="quote_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/quote.png">
                                         </div>
                                         <div style="display: inline-block;
                                         width: 93%;">
@@ -317,9 +317,9 @@
                         <spacer size="15"></spacer>
                     </div>
 
-                    <spacer size="10"></spacer>
+                    <spacer size="40"></spacer>
                     <!--Заголовок страны-->
-                    <row mc:repeatable="repeat_29"
+                    <!--<row mc:repeatable="repeat_29"
                          mc:variant="Заголовок страны"
                          mc:repeatindex="0">
                         <columns small="12" large="12" style="padding-top: 0 !important;">
@@ -328,14 +328,23 @@
                             color: #ec008c;
                             font-weight: 300;">ОАЭ</h2>
                         </columns>
-                    </row>
+                    </row>-->
 
                     <row mc:repeatable="repeat_30"
                          mc:variant="Блок со страной подробный"
                          mc:repeatindex="0">
+
                         <columns small="12" large="12" style="padding-left: 0 !important;
                          padding-right: 0 !important;
                          padding-bottom: 0 !important;">
+                            <div mc:edit="title_country_m">
+                                <spacer size="40"></spacer>
+                                <p class="text-left" style="font-size: 45px;
+                            text-align: center;
+                            color: #ec008c;
+                            font-weight: 300;">ОАЭ</p>
+                            </div>
+                            <spacer size="10"></spacer>
                             <div style=" border: 1px solid #c6c6c6;
                               border-radius: 4px;">
                                 <div>
@@ -366,7 +375,7 @@
                                         завораживающие пейзажи пустыни с оазисами и высокими песчаными дюнами
                                         (в каждом эмирате свой </p>
                                     <spacer size="10"></spacer>
-                                    <p style="font-size: 35px; color: #00aeef;
+                                    <p mc:edit="country_main_price" style="font-size: 35px; color: #00aeef;
                                         line-height: 35px;
                                         display: inline-block;
                                         vertical-align: top;
@@ -377,7 +386,7 @@
                                     <div style="display: inline-block;
                                         float: right;
                                         vertical-align: top;">
-                                        <a style="width: 180px;
+                                        <a mc:edit="button_text_main_country" style="width: 180px;
                                         display: block;
                                         margin-left: auto;
                                         margin-right: 20px;
@@ -395,10 +404,11 @@
                                     <spacer size="30"></spacer>
                                 </div>
                             </div>
+                            <spacer size="40"></spacer>
                         </columns>
                     </row>
 
-                    <spacer size="50"></spacer>
+                    <spacer size="30"></spacer>
 
 
                     <!--Плиточки для стран-->
@@ -441,7 +451,7 @@
 
                                         <div style="width: 47%; display: inline-block; padding-right: 2%;">
                                             <h2 class="country-title" style="text-align: center;
-                                            font-size: 20px;" mc:edit="min_country_1">Шри Ланка</h2>
+                                            font-size: 20px;" mc:edit="min_country_2">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
                                     border-radius: 5px;"
@@ -472,7 +482,8 @@
                     <p mc:repeatable="repeat_32"
                        mc:variant="Мелкий текст"
                        mc:repeatindex="0"
-                       mc:edit="little_text" style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
+                       mc:edit="little_text"
+                       style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
                         * Цена указана за одного человека при двухместном размещении.
                         <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
                     </p>
@@ -493,7 +504,7 @@
                                         padding: 8px;
                                         padding-top: 10px;
                                         text-align: center;
-                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)" href="#">Перейти на сайт
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)" href="http://www.makintour.com/">Перейти на сайт
                     </a>
 
                     <spacer size="50"></spacer>
@@ -529,7 +540,8 @@
                                          margin-left: 0;
                                          "></a></span>
                                     <spacer size="0"></spacer>
-                                    <strong mc:edit="address1_header" style="color: #8b8b8b; font-weight: 300;">Офисы продаж:</strong><br>
+                                    <strong mc:edit="address1_header" style="color: #8b8b8b; font-weight: 300;">Офисы
+                                        продаж:</strong><br>
                                     <a mc:edit="address1_tel1" class="footer__tel"
                                        style="text-decoration: none; color: #8b8b8b; font-size: 18px; font-weight: 700; background: transparent;">
                                         8 800 800 025</a><br>
@@ -564,15 +576,16 @@
                                         font-family: Calibri, Arial, sans-serif;
                                         line-height: 1.214;
                                         margin-bottom: 0;">
-                                        <strong mc:edit="address2_header" style="color:#8b8b8b; line-height:1; font-size: 16px;">
+                                        <strong mc:edit="address2_header"
+                                                style="color:#8b8b8b; line-height:1; font-size: 16px;">
                                             Присоединяйтесь к нам:</strong></p>
                                 </div>
                                 <div>
                                     <p style="color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_fb"
-                                                href=""
-                                                style="text-decoration: none; color: #2f86b3; background: transparent;"
-                                                title="facebook"><img
+                                           href=""
+                                           style="text-decoration: none; color: #2f86b3; background: transparent;"
+                                           title="facebook"><img
                                                 alt="facebook" height="36"
                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/fb.png"
                                                 style="text-decoration: none; vertical-align: top; max-width: 100%; border: none;"
@@ -580,9 +593,9 @@
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_vk"
-                                                href=""
-                                                style="text-decoration: none; color: #2f86b3; background: transparent;"
-                                                title="vkontakte"><img
+                                           href=""
+                                           style="text-decoration: none; color: #2f86b3; background: transparent;"
+                                           title="vkontakte"><img
                                                 alt="vkontakte" height="36"
                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/vk.png"
                                                 style="text-decoration: none; vertical-align: top; max-width: 100%; border: none;"
@@ -590,21 +603,21 @@
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_gg"
-                                                href=""
-                                                style="text-decoration: none; color: #2f86b3; background: transparent;"
-                                                title="google+"><img
+                                           href=""
+                                           style="text-decoration: none; color: #2f86b3; background: transparent;"
+                                           title="google+"><img
                                                 alt="google+" height="36"
                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/gg.png"
-                                            style="text-decoration: none; vertical-align: top; max-width: 100%;
+                                                style="text-decoration: none; vertical-align: top; max-width: 100%;
                                             border:
                                             none;"
-                                            width="39"></a>
+                                                width="39"></a>
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_ok"
-                                                href=""
-                                                style="text-decoration: none; color: #2f86b3; background: transparent;"
-                                                title="odnoklassniki">
+                                           href=""
+                                           style="text-decoration: none; color: #2f86b3; background: transparent;"
+                                           title="odnoklassniki">
                                             <img alt="odnoklassniki" height="36"
                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/ok.png"
                                                  style="text-decoration: none; vertical-align: top; max-width: 100%; border: none;"
