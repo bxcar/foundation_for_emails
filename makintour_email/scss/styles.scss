@@ -78,6 +78,64 @@ table.button {
   }
 }*/
 
+@media only screen and (max-width: 599px) {
+  .top-image-size {
+    width: 95% !important;
+  }
+
+  .top_logo_image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact {
+    text-align: center !important;
+  }
+
+  .top_contacts {
+    width: 100% !important;
+  }
+
+  .center-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .bottom-tel {
+    text-align: center !important;
+  }
+
+  .bottom-tel-logo {
+    width: 90% !important;
+    padding-bottom: 15px !important;
+  }
+
+  .bottom-tel-1 p:last-child {
+    display: none !important;
+  }
+  .bottom-tel-2 {
+    margin-top: -16px !important;
+  }
+
+  .quote-block-mail {
+    font-size: 14px !important;
+  }
+
+  .sell-h {
+    font-size: 20px !important;
+    line-height: 23px !important;
+  }
+
+  .country-title {
+    font-size: 18px !important;
+  }
+
+  .bottom-tel-containter {
+    padding-bottom: 0 !important;
+    //margin-left: 25px !important;
+  }
+}
+
 .text-right {
   text-align: right;
 }

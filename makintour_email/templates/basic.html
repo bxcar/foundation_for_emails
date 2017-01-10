@@ -32,15 +32,18 @@
                                 /*max-width: 320px;*/
                                 /*vertical-align: top;*/
                                 text-align: center !important;
-                                margin-top: 20px;">
+                                margin-top: 20px;"
+                                     class="top-image-size">
                                     <img mc:edit="top_logo_image"
+                                         class="top_logo_image"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png"
                                          alt="logo">
                                 </div>
                                 <!--</columns>-->
 
                                 <!--<columns large="5" class="custom-pb">-->
-                                <div style="display: inline-block !important;width:50%;  min-width: 250px; float: right;">
+                                <div class="top_contacts"
+                                     style="display: inline-block !important;width:50%;  min-width: 250px; float: right;">
                                     <div mc:edit="top_contacts" class="contact"
                                          style="text-align: right; margin-top: 20px;
                                        color: #474747">Хотите на отдых?
@@ -131,10 +134,12 @@
                                 width:100%;
                                 vertical-align: top;
                                 /*margin-top: 20px;*/">
-                                    <img mc:edit="left_image" style="display: block;"
+                                    <img mc:edit="left_image" style="display: block;
+                                    width: 100%;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/cocktail.png"
                                          alt="user">
-                                    <img mc:edit="left_image" style="display: block;"
+                                    <img mc:edit="left_image" style="display: block;
+                                    width: 100%;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png"
                                          alt="underline">
                                 </div>
@@ -162,7 +167,7 @@
                     <!--Здесь пишем продающий заголовок-->
                     <row>
                         <columns small="12" large="12">
-                            <h2 class="text-left" style="font-size: 35px; /*padding-left: 10px;*/
+                            <h2 class="text-left sell-h" style="font-size: 35px; /*padding-left: 10px;*/
                             text-align: center;
                             color: #ec008c;
                             font-weight: 300;"
@@ -181,10 +186,12 @@
                                 width:100%;
                                 vertical-align: top;
                                 /*margin-top: 20px;*/">
-                                    <img mc:edit="left_image" style="display: block;"
+                                    <img mc:edit="left_image" style="display: block;
+                                    width: 100%;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo.png"
                                          alt="user">
-                                    <img mc:edit="left_image" style="display: block;"
+                                    <img mc:edit="left_image" style="display: block;
+                                    width: 100%;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png"
                                          alt="underline">
                                 </div>
@@ -456,7 +463,7 @@
                               padding: 10px;
                               padding-left: 0;">
                                         <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                            <h2 style="text-align: center;
+                                            <h2 class="country-title" style="text-align: center;
                                             font-size: 20px;" mc:edit="min_country_1">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
@@ -487,7 +494,7 @@
                                      max-width: 240px;
                                      padding: 10px;">-->
                                         <div style="width: 47%; display: inline-block; padding-right: 2%;">
-                                            <h2 style="text-align: center;
+                                            <h2 class="country-title" style="text-align: center;
                                             font-size: 20px;" mc:edit="min_country_1">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
@@ -540,19 +547,21 @@
 
                     <spacer size="50"></spacer>
                     <!--Форма поиска-->
-                    <a href="http://makintour.com"><img style="margin-left: auto; margin-right: auto;"
+                    <a href="http://makintour.com"><img style="margin-left: auto; margin-right: auto;
+                    width: 100%;"
                                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png"
                                                         alt="makintour.com"></a>
 
                     <spacer size="20"></spacer>
 
                     <row>
-                        <columns small="12" large="6">
-                            <div class="text-left">
+                        <columns small="12" large="6" class="bottom-tel-containter" style="display: inline-block !important;
+                        width: 254px !important;">
+                            <div class="text-left bottom-tel bottom-tel-1">
                                 <spacer size="5"></spacer>
                                 <p style="color: #363735; padding: 10px 0 30px; font: 14px/1 Calibri, Arial, sans-serif;
                                 margin-bottom: 5px;"
-                                   class="mob-center text-left" mc:edit="address1">
+                                   class="mob-center text-left bottom-tel-logo" mc:edit="address1">
                                 <span class="logo" style="font-size: 16px; line-height: 1.2; color: #b1b1b1;"><a href=""
                                                                                                                  style="text-decoration: none; color: #b1b1b1; background: transparent;">
                                     <img class="center-image"
@@ -577,27 +586,29 @@
                                     <a class="footer__tel"
                                        style="text-decoration: none; color: #8b8b8b; font-size: 18px; font-weight: 700; background: transparent;">
                                         099 644 50 55</a><br>
-                                    &nbsp;
                                 </p>
+                                &nbsp;
                             </div>
                         </columns>
-                        <columns small="12" large="6">
-                            <div class="text-right">
+
+                        <columns small="12" large="6" style="display: inline-block !important; float: right;">
+                            <div class="text-right bottom-tel">
                                 <spacer size="30"></spacer>
                                 <!--<div style="text-align: right;">-->
                                 <div>
-                                    <p class="text-right"
+                                    <p class="text-right bottom-tel"
                                        style="color: rgb(53, 52, 52);
                                        padding: 0px 0px 10px 4px;
-                                        font-style: normal;
-                                         font-variant: normal;
-                                          font-weight: normal;
-                                           font-stretch: normal;
-                                            font-size: 14px;
-                                             font-family: Calibri, Arial, sans-serif;
-                                              line-height: 1.214;
-                                              margin-bottom: 0;">
-                                        <strong style="color:#8b8b8b; line-height:1; font-size: 16px;">Присоединяйтесь к
+                                       font-style: normal;
+                                        font-variant: normal;
+                                        font-weight: normal;
+                                        font-stretch: normal;
+                                        font-size: 14px;
+                                        font-family: Calibri, Arial, sans-serif;
+                                        line-height: 1.214;
+                                        margin-bottom: 0;">
+                                        <strong style="color:#8b8b8b; line-height:1; font-size: 16px;">Присоединяйтесь
+                                            к
                                             нам:</strong></p>
                                 </div>
                                 <div>
@@ -628,7 +639,8 @@
                                                 title="google+"><img
                                                 alt="google+" height="36"
                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/gg.png""
-                                            style="text-decoration: none; vertical-align: top; max-width: 100%; border:
+                                            style="text-decoration: none; vertical-align: top; max-width: 100%;
+                                            border:
                                             none;"
                                             width="39"></a>
                                     </p>
@@ -692,7 +704,8 @@
                                 </div>
                                 <p style="text-align: center;
                                 color: #6b6b6b;">
-                                    Добавьте наш адрес <a href="#" style="text-decoration: underline; color: #ec008c;">email@makintour.com</a> в список ваших контактов,
+                                    Добавьте наш адрес <a href="#" style="text-decoration: underline; color: #ec008c;">email@makintour.com</a>
+                                    в список ваших контактов,
                                     чтобы не пропустить важные письма. Мы отвечаем за конфиденциальность данных и не
                                 </p>
 
