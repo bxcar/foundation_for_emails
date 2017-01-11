@@ -28,16 +28,18 @@
                                 <div style="display: inline-block !important;
                                 width:50%;
                                 min-width: 210px;
-                                float: left;
+                                /*float: left;*/
                                 /*max-width: 320px;*/
                                 /*vertical-align: top;*/
                                 text-align: center !important;
                                 margin-top: 20px;"
                                      class="top-image-size">
-                                    <img mc:edit="top_logo_image"
-                                         class="top_logo_image"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png"
-                                         alt="logo">
+                                    <a href="http://www.makintour.com">
+                                        <img mc:edit="top_logo_image" class="top_logo_image"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png"
+                                             alt="logo">
+                                    </a>
+
                                 </div>
                                 <!--</columns>-->
 
@@ -62,7 +64,7 @@
                         </columns>
                     </row>
 
-                    <row mc:repeatable="repeat_21"
+                    <row mc:repeatable="repeatable-block1"
                          mc:variant="Разделитель"
                          mc:repeatindex="0">
                         <columns small="12" large="12" style="padding-bottom: 5px !important;">
@@ -84,14 +86,14 @@
 
                     <!-- Картинка 1 -->
                     <row>
-                        <columns large="12" small="12">
+                        <columns large="12" small="12" style="padding-bottom: 0 !important;">
                             <div style="text-align: center !important;">
                                 <div style="text-align: center !important;
                                 width:100%;
                                 vertical-align: top;
                                 /*margin-top: 20px;*/"
-                                     mc:repeatable="repeat_22"
-                                     mc:variant="Большая картинка 1"
+                                     mc:repeatable="repeatable-block2"
+                                     mc:variant="Большая картинка"
                                      mc:repeatindex="0">
                                     <img mc:edit="big_image1" style="display: block;
                                     width: 100%;"
@@ -110,8 +112,8 @@
                                  vertical-align: top;
                                  margin-top: 20px;
                                  color: #474747;"
-                                   mc:repeatable="repeat_23"
-                                   mc:variant="Блок текста 1"
+                                   mc:repeatable="repeatable1"
+                                   mc:variant="Блок текста"
                                    mc:repeatindex="0"
                                    mc:edit="text1">Когда за окном пасмурно и холодно, все больше и приятней
                                     думается об отдыхе. Именно сейчас, в декабре, еще перед Новогодней суматохой
@@ -124,13 +126,13 @@
                     </row>
 
 
-                    <spacer size="15"></spacer>
+                    <!--<spacer size="15"></spacer>-->
 
                     <!--Здесь пишем продающий заголовок-->
-                    <row mc:repeatable="repeat_24"
-                         mc:variant="Продающий заголовок"
-                         mc:repeatindex="0">
-                        <columns small="12" large="12">
+                    <row mc:repeatable="repeatable-block3"
+                         mc:repeatindex="0"
+                         mc:variant="Продающий заголовок">
+                        <columns small="12" large="12" style="padding-bottom: 0 !important;">
                             <h2 mc:edit="main_header" class="text-left sell-h" style="font-size: 35px; /*padding-left: 10px;*/
                             text-align: center;
                             color: #ec008c;
@@ -139,15 +141,14 @@
                     </row>
 
                     <!-- Картинка 2 -->
-                    <row mc:repeatable="repeat_25"
+                    <!--<row mc:repeatable="repeat_25"
                          mc:variant="Большая картинка 2"
                          mc:repeatindex="0">
                         <columns large="12" small="12">
                             <div style="text-align: center !important;">
                                 <div style="text-align: center !important;
                                 width:100%;
-                                vertical-align: top;
-                                /*margin-top: 20px;*/">
+                                vertical-align: top;">
                                     <img mc:edit="big_image2" style="display: block;
                                     width: 100%;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo.png"
@@ -159,39 +160,42 @@
                                 </div>
                             </div>
                         </columns>
-                    </row>
+                    </row>-->
 
 
                     <!-- Текст -->
-                    <row mc:repeatable="repeat_26"
+                    <!--<row mc:repeatable="repeat_26"
                          mc:variant="Блок текста 2"
                          mc:repeatindex="0">
                         <columns small="12" large="6">
-                            <!--<div style="text-align: center !important;">-->
-                            <p style="/*display: inline-block;*/
+                            <p style="
                                 font-size: 14px;
                                 line-height: 20px;
                                 max-width: 580px;
                                 margin-left: auto;
                                 margin-right: auto;
                                 text-align: left;
-                                color: #474747;
-                                /*width:100%;*/"
+                                color: #474747;"
                                mc:edit="text2">Египет — одно из самых популярных направлений среди украинцев.
                                 Декабрь – месяц комфортного и спокойного отдыха в Египте, когда нет летнего зноя
                                 и температура удобна для отдыха. Ведь что может быть приятнее,
                                 чем переместиться из холода и непогоды на роскошный пляж в экзотической
                                 стране и получить заряд позитива и тепла перед долгой и холодной зимой?</p>
-                            <!--</div>-->
+                            &lt;!&ndash;</div>&ndash;&gt;
                         </columns>
-                    </row>
+                    </row>-->
 
-                    <hr>
+                    <div mc:repeatable="repeatable-block4"
+                         mc:repeatindex="0"
+                         mc:variant="Серый разделитель">
+                        <hr>
+                    </div>
+
 
                     <!--Плиточки-->
-                    <row mc:repeatable="repeat_27"
-                         mc:variant="Блок с плиточками"
-                         mc:repeatindex="0">
+                    <row mc:repeatable="repeatable-block5"
+                         mc:repeatindex="0"
+                         mc:variant="Блок с плиточками">
                         <columns small="12" large="12" style="padding-left: 0 !important; padding-right: 0 !important;">
                             <div style="text-align: center !important;">
                                 <div style="
@@ -286,10 +290,10 @@
                     </row>
 
                     <!--Цитата-->
-                    <div style="background: #dbdbdb;
-                    " mc:repeatable="repeat_28"
-                         mc:variant="Блок c цитатой"
-                         mc:repeatindex="0">
+                    <div style="background: #dbdbdb;"
+                         mc:repeatable="repeatable-block6"
+                         mc:repeatindex="0"
+                         mc:variant="Блок c цитатой">
                         <spacer size="15"></spacer>
                         <row>
                             <div>
@@ -317,28 +321,16 @@
                         <spacer size="15"></spacer>
                     </div>
 
-                    <spacer size="40"></spacer>
-                    <!--Заголовок страны-->
-                    <!--<row mc:repeatable="repeat_29"
-                         mc:variant="Заголовок страны"
-                         mc:repeatindex="0">
-                        <columns small="12" large="12" style="padding-top: 0 !important;">
-                            <h2 mc:edit="title_country" class="text-left" style="font-size: 45px; /*padding-left: 10px;*/
-                            text-align: center;
-                            color: #ec008c;
-                            font-weight: 300;">ОАЭ</h2>
-                        </columns>
-                    </row>-->
+                    <!--<spacer size="40"></spacer>-->
 
-                    <row mc:repeatable="repeat_30"
-                         mc:variant="Блок со страной подробный"
-                         mc:repeatindex="0">
-
+                    <row mc:repeatable="repeatable-block7"
+                         mc:repeatindex="0"
+                         mc:variant="Блок со страной подробный">
                         <columns small="12" large="12" style="padding-left: 0 !important;
                          padding-right: 0 !important;
                          padding-bottom: 0 !important;">
                             <div mc:edit="title_country_m">
-                                <spacer size="40"></spacer>
+                                <spacer size="20"></spacer>
                                 <p class="text-left" style="font-size: 45px;
                             text-align: center;
                             color: #ec008c;
@@ -375,18 +367,18 @@
                                         завораживающие пейзажи пустыни с оазисами и высокими песчаными дюнами
                                         (в каждом эмирате свой </p>
                                     <spacer size="10"></spacer>
-                                    <p mc:edit="country_main_price" style="font-size: 35px; color: #00aeef;
+                                    <p class="country-price" mc:edit="country_main_price" style="font-size: 35px; color: #00aeef;
                                         line-height: 35px;
                                         display: inline-block;
                                         vertical-align: top;
                                         margin-left: 20px;
-                                        margin-right: auto;
-                                        "><span style="font-size: 25px">от</span> 342
+                                        margin-right: auto;">
+                                        <span style="font-size: 25px">от</span> 342
                                         <span style="font-size: 25px">$</span></p>
-                                    <div style="display: inline-block;
+                                    <div class="country-button-container" style="display: inline-block;
                                         float: right;
                                         vertical-align: top;">
-                                        <a mc:edit="button_text_main_country" style="width: 180px;
+                                        <span class="country-button" mc:edit="button_text_main_country" style="width: 180px;
                                         display: block;
                                         margin-left: auto;
                                         margin-right: 20px;
@@ -398,24 +390,24 @@
                                         padding: 8px;
                                         padding-top: 10px;
                                         text-align: center;
-                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)" href="#">Хочу в ОАЭ
-                                        </a>
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)">Хочу в ОАЭ
+                                        </span>
                                     </div>
                                     <spacer size="30"></spacer>
                                 </div>
                             </div>
-                            <spacer size="40"></spacer>
+                            <spacer size="20"></spacer>
                         </columns>
                     </row>
 
-                    <spacer size="30"></spacer>
+                    <!--<spacer size="30"></spacer>-->
 
 
                     <!--Плиточки для стран-->
                     <!--1-->
-                    <div mc:repeatable="repeat_31"
-                         mc:variant="Блок стран"
-                         mc:repeatindex="0">
+                    <div mc:repeatable="repeatable-block8"
+                         mc:repeatindex="0"
+                         mc:variant="Блок стран">
                         <row>
                             <columns small="12" large="12" style="padding-bottom: 0;">
                                 <div style="/*text-align: center !important;*/">
@@ -436,7 +428,7 @@
                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
                                                  alt="photo-small">
                                             <spacer size="10"></spacer>
-                                            <a mc:edit="min_country_1_price" style="max-width: 100% !important;
+                                            <span mc:edit="min_country_1_price" style="max-width: 100% !important;
                                         background: #00aeef;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -445,7 +437,7 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$
-                                            </a>
+                                            </span>
                                             <spacer size="10"></spacer>
                                         </div>
 
@@ -459,7 +451,7 @@
                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
                                                  alt="photo-small">
                                             <spacer size="10"></spacer>
-                                            <a mc:edit="min_country_2_price" style="max-width: 100% !important;
+                                            <span mc:edit="min_country_2_price" style="max-width: 100% !important;
                                         background: #00aeef;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -468,7 +460,7 @@
                                         text-decoration: none;
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$
-                                            </a>
+                                            </span>
                                             <spacer size="10"></spacer>
                                         </div>
                                     </div>
@@ -479,20 +471,22 @@
                     </div>
                     <!--//Плиточки для стран-->
 
-                    <p mc:repeatable="repeat_32"
-                       mc:variant="Мелкий текст"
-                       mc:repeatindex="0"
-                       mc:edit="little_text"
-                       style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
-                        * Цена указана за одного человека при двухместном размещении.
-                        <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
-                    </p>
+                    <div mc:repeatable="repeatable-block9"
+                         mc:repeatindex="0"
+                         mc:variant="Что входит в стоимость">
+                        <p mc:edit="little_text"
+                           style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
+                            * Цена указана за одного человека при двухместном размещении.
+                            <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
+                        </p>
+                    </div>
 
                     <!--Кнопка-->
-                    <a mc:repeatable="repeat_33"
-                       mc:variant="Кнопка"
-                       mc:repeatindex="0"
-                       mc:edit="button_text" style="width: 180px;
+                    <div mc:repeatable="repeatable-block10"
+                         mc:repeatindex="0"
+                         mc:variant="Кнопка">
+                        <div mc:edit="button_text">
+                            <a style="width: 180px;
                                         display: block;
                                         background: #00aeef;
                                         margin-right: auto;
@@ -504,34 +498,41 @@
                                         padding: 8px;
                                         padding-top: 10px;
                                         text-align: center;
-                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)" href="http://www.makintour.com/">Перейти на сайт
-                    </a>
-
-                    <spacer size="50"></spacer>
-                    <!--Форма поиска-->
-                    <a mc:repeatable="repeat_34"
-                       mc:variant="Форма перехода"
-                       mc:repeatindex="0"
-                       mc:edit="form_to_site" href="http://makintour.com">
-                        <img style="margin-left: auto; margin-right: auto; width: 100%;"
-                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png"
-                             alt="makintour.com"></a>
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)"
+                               href="http://www.makintour.com/">Перейти на сайт
+                            </a>
+                        </div>
+                    </div>
 
                     <spacer size="20"></spacer>
+                    <!--Форма поиска-->
+                    <div mc:repeatable="repeatable-block11"
+                         mc:repeatindex="0"
+                         mc:variant="Форма перехода">
+                        <div mc:edit="form_to_site">
+                            <a href="http://makintour.com">
+                                <img style="margin-left: auto; margin-right: auto; width: 100%;"
+                                     src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png"
+                                     alt="makintour.com"></a>
+                        </div>
+                    </div>
 
-                    <row mc:repeatable="repeat_35"
-                         mc:variant="Контанкты"
-                         mc:repeatindex="0">
+
+                    <!--<spacer size="20"></spacer>-->
+
+                    <row mc:repeatable="repeatable-block12"
+                         mc:repeatindex="0"
+                         mc:variant="Контакты">
                         <columns small="12" large="6" class="bottom-tel-containter" style="display: inline-block !important;
                         /*width: 254px !important;*/
                         padding-bottom: 0 !important;">
                             <div class="text-left bottom-tel bottom-tel-1">
                                 <spacer size="5"></spacer>
                                 <p style="color: #363735; padding: 10px 0 30px; font: 14px/1 Calibri, Arial, sans-serif;
-                                margin-bottom: 5px;" class="mob-center text-left bottom-tel-logo">
+                                margin-bottom: 5px;" class="mob-center text-left bottom-tel-logo" mc:edit="address1">
                                 <span class="logo" style="font-size: 16px; line-height: 1.2; color: #b1b1b1;"><a href=""
                                                                                                                  style="text-decoration: none; color: #b1b1b1; background: transparent;">
-                                    <img mc:edit="logo_footer" class="center-image"
+                                    <img class="center-image"
                                          src="https://gallery.mailchimp.com/f93514d54fd2d25bb12b9860d/images/9d159ebf-81a5-4211-95dc-0739275ccc3c.png"
                                          width="210" height="59" alt="Makingtour Travel company"
                                          style="text-decoration: none;
@@ -540,22 +541,21 @@
                                          margin-left: 0;
                                          "></a></span>
                                     <spacer size="0"></spacer>
-                                    <strong mc:edit="address1_header" style="color: #8b8b8b; font-weight: 300;">Офисы
+                                    <strong style="color: #8b8b8b; font-weight: 300;">Офисы
                                         продаж:</strong><br>
-                                    <a mc:edit="address1_tel1" class="footer__tel"
+                                    <a class="footer__tel"
                                        style="text-decoration: none; color: #8b8b8b; font-size: 18px; font-weight: 700; background: transparent;">
                                         8 800 800 025</a><br>
-                                    <a mc:edit="address1_tel2" class="footer__tel"
+                                    <a class="footer__tel"
                                        style="text-decoration: none; color: #8b8b8b; font-size: 14px; font-weight: 300; background: transparent;">
                                         звонки бесплатные по всей Украине, в т.ч. с мобильного</a><br>
-                                    <a mc:edit="address1_tel3" class="footer__tel"
+                                    <a class="footer__tel"
                                        style="text-decoration: none; color: #8b8b8b; font-size: 18px; font-weight: 700; background: transparent;">
                                         096 595 01 01</a><br>
-                                    <a mc:edit="address1_tel4" class="footer__tel"
+                                    <a class="footer__tel"
                                        style="text-decoration: none; color: #8b8b8b; font-size: 18px; font-weight: 700; background: transparent;">
                                         099 644 50 55</a><br>
                                 </p>
-                                &nbsp;
                             </div>
                         </columns>
 
@@ -639,9 +639,9 @@
                     </row>
 
 
-                    <row mc:repeatable="repeat_36"
-                         mc:variant="Разделитель2"
-                         mc:repeatindex="0">
+                    <row mc:repeatable="repeatable-block13"
+                         mc:repeatindex="0"
+                         mc:variant="Разделитель2">
                         <columns small="12" large="12" style="padding-bottom: 5px !important;">
                             <div style="text-align: center !important;">
                                 <div style="
@@ -660,10 +660,10 @@
                     </row>
 
 
-                    <row mc:repeatable="repeat_37"
-                         mc:variant="Футер письма"
-                         mc:repeatindex="0">
-                        <columns>
+                    <row mc:repeatable="repeatable-block14"
+                         mc:repeatindex="0"
+                         mc:variant="Футер письма">
+                        <columns style="padding-bottom: 0;">
                             <div style="text-align: center;">
                                 <p mc:edit="ftext1" style="text-align: center;
                                 color: #6b6b6b;">
@@ -684,7 +684,8 @@
                                 </p>
 
                                 <p mc:edit="ftext3" style="text-align: center;
-                                color: #6b6b6b;">
+                                color: #6b6b6b;
+                                margin-bottom: 0;">
                                     Если Вы хотите отказаться от получения писем,
                                     <a href="#" style="text-decoration: underline; color: #ec008c;">нажмите здесь</a>
                                 </p>
@@ -693,19 +694,20 @@
                     </row>
 
 
-                    <spacer size="15"></spacer>
+                    <!--<spacer size="15"></spacer>-->
 
                     <!--Отписка-->
-                    <row mc:repeatable="repeat_38"
-                         mc:variant="Блок отписаться"
-                         mc:repeatindex="0">
+                    <row mc:repeatable="repeatable-block15"
+                         mc:repeatindex="0"
+                         mc:variant="Блок отписаться">
                         <columns large="12" style="padding-bottom: 0;">
-                            <p style="color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; font-size: 10px;">
-                                <a mc:edit="unsubscribe" href="http://makintour.com/o_kompanii/"
+                            <p style="color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; font-size: 10px;"
+                               mc:edit="unsubscribe">
+                                <a href="http://makintour.com/o_kompanii/"
                                    style="color: #ec008c; line-height: 20px; text-decoration: underline;">отписаться от
                                     рассылки</a>
-                                <span mc:edit="uline" style="color: #ec008c; text-decoration: none;"> | </span>
-                                <a mc:edit="uedit_data" href="http://makintour.com/kontakti/"
+                                <span style="color: #ec008c; text-decoration: none;"> | </span>
+                                <a href="http://makintour.com/kontakti/"
                                    style="color: #ec008c; line-height: 20px; text-decoration: underline;">
                                     редактировать
                                     свои данные</a>

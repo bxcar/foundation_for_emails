@@ -197,6 +197,7 @@
   .top_logo_image {
     margin-left: auto;
     margin-right: auto;
+    display: inline-block !important;
   }
   .contact {
     text-align: center !important;
@@ -237,6 +238,18 @@
   .th.small-12 {
     max-width: 100% !important;
   }
+  .country-price {
+    display: block !important;
+    text-align: center !important;
+  }
+  .country-button {
+    text-align: center !important;
+    margin-right: auto !important;
+  }
+  .country-button,.country-button-container {
+    display: block !important;
+    float: none !important;
+  }
 }
 </style>
 </head>
@@ -256,12 +269,15 @@
                                 <div style="display: inline-block !important;
                                 width:50%;
                                 min-width: 210px;
-                                float: left;
+                                /*float: left;*/
                                 /*max-width: 320px;*/
                                 /*vertical-align: top;*/
                                 text-align: center !important;
                                 margin-top: 20px;" class="top-image-size">
-                                    <img mc:edit="top_logo_image" class="top_logo_image" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png" alt="logo" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;">
+                                    <a href="http://www.makintour.com" style="Margin: 0; color: #f61067; font-family: Arial,sans-serif; font-weight: 400; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                        <img mc:edit="top_logo_image" class="top_logo_image" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png" alt="logo" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;">
+                                    </a>
+
                                 </div>
                                 <!--</columns>-->
 
@@ -280,7 +296,7 @@
 <th class="expander" style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
                     </tr></tbody></table>
 
-                    <table mc:repeatable="repeat_21" mc:variant="Разделитель" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                    <table mc:repeatable="repeatable-block1" mc:variant="Разделитель" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                         <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 5px !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div mc:edit="separate_line" style="text-align: center !important;">
                                 <div style="
@@ -299,17 +315,17 @@
 
                     <!-- Картинка 1 -->
                     <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
+                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div style="text-align: center !important;">
                                 <div style="text-align: center !important;
                                 width:100%;
                                 vertical-align: top;
-                                /*margin-top: 20px;*/" mc:repeatable="repeat_22" mc:variant="Большая картинка 1" mc:repeatindex="0">
+                                /*margin-top: 20px;*/" mc:repeatable="repeatable-block2" mc:variant="Большая картинка" mc:repeatindex="0">
                                     <img mc:edit="big_image1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100%;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/cocktail.png" alt="user">
                                     <img mc:edit="underline_image1" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100%;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png" alt="underline">
                                 </div>
 
-                                <p style="Margin: 0; Margin-bottom: 10px; color: #474747; display: inline-block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; margin-bottom: 10px; margin-top: 20px; padding: 0; text-align: left; vertical-align: top; width: 100%;" mc:repeatable="repeat_23" mc:variant="Блок текста 1" mc:repeatindex="0" mc:edit="text1">Когда за окном пасмурно и холодно, все больше и приятней
+                                <p style="Margin: 0; Margin-bottom: 10px; color: #474747; display: inline-block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; margin-bottom: 10px; margin-top: 20px; padding: 0; text-align: left; vertical-align: top; width: 100%;" mc:repeatable="repeatable1" mc:variant="Блок текста" mc:repeatindex="0" mc:edit="text1">Когда за окном пасмурно и холодно, все больше и приятней
                                     думается об отдыхе. Именно сейчас, в декабре, еще перед Новогодней суматохой
                                     и праздниками можно действительно выгодно отдохнуть.
                                     Мы подготовили для Вас ТОП-5 самых выгодных и ярких направлений отдыха,
@@ -321,50 +337,68 @@
                     </tr></tbody></table>
 
 
-                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="15px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 15px; font-weight: 400; hyphens: auto; line-height: 15px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
+                    <!--<spacer size="15"></spacer>-->
 
                     <!--Здесь пишем продающий заголовок-->
-                    <table mc:repeatable="repeat_24" mc:variant="Продающий заголовок" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
+                    <table mc:repeatable="repeatable-block3" mc:repeatindex="0" mc:variant="Продающий заголовок" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <h2 mc:edit="main_header" class="text-left sell-h" style="Margin: 0; Margin-bottom: 0; color: #ec008c; font-family: Arial,sans-serif; font-size: 35px; font-weight: 300; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;">Здесь пишем продающий заголовок</h2>
                         </th>
 <th class="expander" style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
                     </tr></tbody></table>
 
                     <!-- Картинка 2 -->
-                    <table mc:repeatable="repeat_25" mc:variant="Большая картинка 2" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
+                    <!--<row mc:repeatable="repeat_25"
+                         mc:variant="Большая картинка 2"
+                         mc:repeatindex="0">
+                        <columns large="12" small="12">
                             <div style="text-align: center !important;">
                                 <div style="text-align: center !important;
                                 width:100%;
-                                vertical-align: top;
-                                /*margin-top: 20px;*/">
-                                    <img mc:edit="big_image2" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100%;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo.png" alt="user">
-                                    <img mc:edit="underline_image2" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100%;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png" alt="underline">
+                                vertical-align: top;">
+                                    <img mc:edit="big_image2" style="display: block;
+                                    width: 100%;"
+                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo.png"
+                                         alt="user">
+                                    <img mc:edit="underline_image2" style="display: block;
+                                    width: 100%;"
+                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png"
+                                         alt="underline">
                                 </div>
                             </div>
-                        </th>
-<th class="expander" style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
-                    </tr></tbody></table>
+                        </columns>
+                    </row>-->
 
 
                     <!-- Текст -->
-                    <table mc:repeatable="repeat_26" mc:variant="Блок текста 2" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                        <th class="small-12 large-6 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 274px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
-                            <!--<div style="text-align: center !important;">-->
-                            <p style="Margin: 0; Margin-bottom: 10px; color: #474747; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; margin-bottom: 10px; margin-left: auto; margin-right: auto; max-width: 580px; padding: 0; text-align: left;" mc:edit="text2">Египет — одно из самых популярных направлений среди украинцев.
+                    <!--<row mc:repeatable="repeat_26"
+                         mc:variant="Блок текста 2"
+                         mc:repeatindex="0">
+                        <columns small="12" large="6">
+                            <p style="
+                                font-size: 14px;
+                                line-height: 20px;
+                                max-width: 580px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                text-align: left;
+                                color: #474747;"
+                               mc:edit="text2">Египет — одно из самых популярных направлений среди украинцев.
                                 Декабрь – месяц комфортного и спокойного отдыха в Египте, когда нет летнего зноя
                                 и температура удобна для отдыха. Ведь что может быть приятнее,
                                 чем переместиться из холода и непогоды на роскошный пляж в экзотической
                                 стране и получить заряд позитива и тепла перед долгой и холодной зимой?</p>
-                            <!--</div>-->
-                        </th></tr></table></th>
-                    </tr></tbody></table>
+                            &lt;!&ndash;</div>&ndash;&gt;
+                        </columns>
+                    </row>-->
 
-                    <hr style="Margin: 20px auto; border-bottom: 1px solid #cacaca; border-left: 0; border-right: 0; border-top: 0; clear: both; height: 0; margin: 20px auto; max-width: 580px;">
+                    <div mc:repeatable="repeatable-block4" mc:repeatindex="0" mc:variant="Серый разделитель">
+                        <hr style="Margin: 20px auto; border-bottom: 1px solid #cacaca; border-left: 0; border-right: 0; border-top: 0; clear: both; height: 0; margin: 20px auto; max-width: 580px;">
+                    </div>
+
 
                     <!--Плиточки-->
-                    <table mc:repeatable="repeat_27" mc:variant="Блок с плиточками" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                    <table mc:repeatable="repeatable-block5" mc:repeatindex="0" mc:variant="Блок с плиточками" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                         <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div style="text-align: center !important;">
                                 <div style="
@@ -424,8 +458,7 @@
                     </tr></tbody></table>
 
                     <!--Цитата-->
-                    <div style="background: #dbdbdb;
-                    " mc:repeatable="repeat_28" mc:variant="Блок c цитатой" mc:repeatindex="0">
+                    <div style="background: #dbdbdb;" mc:repeatable="repeatable-block6" mc:repeatindex="0" mc:variant="Блок c цитатой">
                         <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="15px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 15px; font-weight: 400; hyphens: auto; line-height: 15px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                         <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                             <div>
@@ -450,24 +483,12 @@
                         <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="15px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 15px; font-weight: 400; hyphens: auto; line-height: 15px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                     </div>
 
-                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 40px; font-weight: 400; hyphens: auto; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                    <!--Заголовок страны-->
-                    <!--<row mc:repeatable="repeat_29"
-                         mc:variant="Заголовок страны"
-                         mc:repeatindex="0">
-                        <columns small="12" large="12" style="padding-top: 0 !important;">
-                            <h2 mc:edit="title_country" class="text-left" style="font-size: 45px; /*padding-left: 10px;*/
-                            text-align: center;
-                            color: #ec008c;
-                            font-weight: 300;">ОАЭ</h2>
-                        </columns>
-                    </row>-->
+                    <!--<spacer size="40"></spacer>-->
 
-                    <table mc:repeatable="repeat_30" mc:variant="Блок со страной подробный" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-
+                    <table mc:repeatable="repeatable-block7" mc:repeatindex="0" mc:variant="Блок со страной подробный" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                         <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div mc:edit="title_country_m">
-                                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 40px; font-weight: 400; hyphens: auto; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
+                                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="20px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 20px; font-weight: 400; hyphens: auto; line-height: 20px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                                 <p class="text-left" style="Margin: 0; Margin-bottom: 10px; color: #ec008c; font-family: Arial,sans-serif; font-size: 45px; font-weight: 300; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">ОАЭ</p>
                             </div>
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
@@ -490,28 +511,41 @@
                                         завораживающие пейзажи пустыни с оазисами и высокими песчаными дюнами
                                         (в каждом эмирате свой </p>
                                     <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                                    <p mc:edit="country_main_price" style="Margin: 0; Margin-bottom: 10px; color: #00aeef; display: inline-block; font-family: Arial,sans-serif; font-size: 35px; font-weight: 400; line-height: 35px; margin: 0; margin-bottom: 10px; margin-left: 20px; margin-right: auto; padding: 0; text-align: left; vertical-align: top;"><span style="font-size: 25px">от</span> 342
+                                    <p class="country-price" mc:edit="country_main_price" style="Margin: 0; Margin-bottom: 10px; color: #00aeef; display: inline-block; font-family: Arial,sans-serif; font-size: 35px; font-weight: 400; line-height: 35px; margin: 0; margin-bottom: 10px; margin-left: 20px; margin-right: auto; padding: 0; text-align: left; vertical-align: top;">
+                                        <span style="font-size: 25px">от</span> 342
                                         <span style="font-size: 25px">$</span></p>
-                                    <div style="display: inline-block;
+                                    <div class="country-button-container" style="display: inline-block;
                                         float: right;
                                         vertical-align: top;">
-                                        <a mc:edit="button_text_main_country" style="Margin: 0; background: #00aeef; border-radius: 5px; box-shadow: 4px 4px 9px -2px rgba(0,0,0,0.75); color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 18px; font-weight: 400; line-height: 1.3; margin: 0; margin-left: auto; margin-right: 20px; padding: 8px; padding-top: 10px; text-align: center; text-decoration: none; width: 180px;" href="#">Хочу в ОАЭ
-                                        </a>
+                                        <span class="country-button" mc:edit="button_text_main_country" style="width: 180px;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: 20px;
+                                        background: #00aeef;
+                                        color: #ffffff;
+                                        font-size: 18px;
+                                        border-radius: 5px;
+                                        text-decoration: none;
+                                        padding: 8px;
+                                        padding-top: 10px;
+                                        text-align: center;
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)">Хочу в ОАЭ
+                                        </span>
                                     </div>
                                     <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="30px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 30px; font-weight: 400; hyphens: auto; line-height: 30px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                                 </div>
                             </div>
-                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 40px; font-weight: 400; hyphens: auto; line-height: 40px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="20px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 20px; font-weight: 400; hyphens: auto; line-height: 20px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                         </th>
 <th class="expander" style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
                     </tr></tbody></table>
 
-                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="30px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 30px; font-weight: 400; hyphens: auto; line-height: 30px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
+                    <!--<spacer size="30"></spacer>-->
 
 
                     <!--Плиточки для стран-->
                     <!--1-->
-                    <div mc:repeatable="repeat_31" mc:variant="Блок стран" mc:repeatindex="0">
+                    <div mc:repeatable="repeatable-block8" mc:repeatindex="0" mc:variant="Блок стран">
                         <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                             <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                                 <div style="/*text-align: center !important;*/">
@@ -527,8 +561,16 @@
                                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                                             <img style="-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;" mc:edit="min_country_1_image" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png" alt="photo-small">
                                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                                            <a mc:edit="min_country_1_price" style="Margin: 0; background: #00aeef; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;" href="#">от 350$
-                                            </a>
+                                            <span mc:edit="min_country_1_price" style="max-width: 100% !important;
+                                        background: #00aeef;
+                                        color: #ffffff;
+                                        font-size: 14px;
+                                        border-radius: 4px;
+                                        display: block;
+                                        text-decoration: none;
+                                        padding: 7px;
+                                        text-align: center;" href="#">от 350$
+                                            </span>
                                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                                         </div>
 
@@ -537,8 +579,16 @@
                                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                                             <img style="-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;" mc:edit="min_country_2_image" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png" alt="photo-small">
                                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                                            <a mc:edit="min_country_2_price" style="Margin: 0; background: #00aeef; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;" href="#">от 350$
-                                            </a>
+                                            <span mc:edit="min_country_2_price" style="max-width: 100% !important;
+                                        background: #00aeef;
+                                        color: #ffffff;
+                                        font-size: 14px;
+                                        border-radius: 4px;
+                                        display: block;
+                                        text-decoration: none;
+                                        padding: 7px;
+                                        text-align: center;" href="#">от 350$
+                                            </span>
                                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
                                         </div>
                                     </div>
@@ -550,42 +600,52 @@
                     </div>
                     <!--//Плиточки для стран-->
 
-                    <p mc:repeatable="repeat_32" mc:variant="Мелкий текст" mc:repeatindex="0" mc:edit="little_text" style="Margin: 0; Margin-bottom: 10px; color: #707070; font-family: Arial,sans-serif; font-size: 9px; font-weight: 400; line-height: 10px; margin: 0; margin-bottom: 10px; margin-left: auto; margin-right: auto; padding: 0; text-align: center; width: 85%;">
-                        * Цена указана за одного человека при двухместном размещении.
-                        <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
-                    </p>
+                    <div mc:repeatable="repeatable-block9" mc:repeatindex="0" mc:variant="Что входит в стоимость">
+                        <p mc:edit="little_text" style="Margin: 0; Margin-bottom: 10px; color: #707070; font-family: Arial,sans-serif; font-size: 9px; font-weight: 400; line-height: 10px; margin: 0; margin-bottom: 10px; margin-left: auto; margin-right: auto; padding: 0; text-align: center; width: 85%;">
+                            * Цена указана за одного человека при двухместном размещении.
+                            <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
+                        </p>
+                    </div>
 
                     <!--Кнопка-->
-                    <a mc:repeatable="repeat_33" mc:variant="Кнопка" mc:repeatindex="0" mc:edit="button_text" style="Margin: 0; background: #00aeef; border-radius: 5px; box-shadow: 4px 4px 9px -2px rgba(0,0,0,0.75); color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 18px; font-weight: 400; line-height: 1.3; margin: 0; margin-left: auto; margin-right: auto; padding: 8px; padding-top: 10px; text-align: center; text-decoration: none; width: 180px;" href="http://www.makintour.com/">Перейти на сайт
-                    </a>
-
-                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 50px; font-weight: 400; hyphens: auto; line-height: 50px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                    <!--Форма поиска-->
-                    <a mc:repeatable="repeat_34" mc:variant="Форма перехода" mc:repeatindex="0" mc:edit="form_to_site" href="http://makintour.com" style="Margin: 0; color: #f61067; font-family: Arial,sans-serif; font-weight: 400; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
-                        <img style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; margin-left: auto; margin-right: auto; max-width: 100%; outline: none; text-decoration: none; width: 100%;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png" alt="makintour.com"></a>
+                    <div mc:repeatable="repeatable-block10" mc:repeatindex="0" mc:variant="Кнопка">
+                        <div mc:edit="button_text">
+                            <a style="Margin: 0; background: #00aeef; border-radius: 5px; box-shadow: 4px 4px 9px -2px rgba(0,0,0,0.75); color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 18px; font-weight: 400; line-height: 1.3; margin: 0; margin-left: auto; margin-right: auto; padding: 8px; padding-top: 10px; text-align: center; text-decoration: none; width: 180px;" href="http://www.makintour.com/">Перейти на сайт
+                            </a>
+                        </div>
+                    </div>
 
                     <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="20px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 20px; font-weight: 400; hyphens: auto; line-height: 20px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
+                    <!--Форма поиска-->
+                    <div mc:repeatable="repeatable-block11" mc:repeatindex="0" mc:variant="Форма перехода">
+                        <div mc:edit="form_to_site">
+                            <a href="http://makintour.com" style="Margin: 0; color: #f61067; font-family: Arial,sans-serif; font-weight: 400; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                <img style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; margin-left: auto; margin-right: auto; max-width: 100%; outline: none; text-decoration: none; width: 100%;" src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png" alt="makintour.com"></a>
+                        </div>
+                    </div>
 
-                    <table mc:repeatable="repeat_35" mc:variant="Контанкты" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+
+                    <!--<spacer size="20"></spacer>-->
+
+                    <table mc:repeatable="repeatable-block12" mc:repeatindex="0" mc:variant="Контакты" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                         <th class="bottom-tel-containter small-12 large-6 columns first" style="Margin: 0 auto; color: #000; display: inline-block !important; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 8px; text-align: left; width: 274px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div class="text-left bottom-tel bottom-tel-1" style="text-align: left;">
                                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 5px; font-weight: 400; hyphens: auto; line-height: 5px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                                <p style="Margin: 0; Margin-bottom: 10px; color: #363735; font: 14px/1 Calibri, Arial, sans-serif; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; margin-bottom: 5px; padding: 10px 0 30px; text-align: left;" class="mob-center text-left bottom-tel-logo">
+                                <p style="Margin: 0; Margin-bottom: 10px; color: #363735; font: 14px/1 Calibri, Arial, sans-serif; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; margin-bottom: 5px; padding: 10px 0 30px; text-align: left;" class="mob-center text-left bottom-tel-logo" mc:edit="address1">
                                 <span class="logo" style="font-size: 16px; line-height: 1.2; color: #b1b1b1;"><a href="" style="Margin: 0; background: transparent; color: #b1b1b1; font-family: Arial,sans-serif; font-weight: 400; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
-                                    <img mc:edit="logo_footer" class="center-image" src="https://gallery.mailchimp.com/f93514d54fd2d25bb12b9860d/images/9d159ebf-81a5-4211-95dc-0739275ccc3c.png" width="210" height="59" alt="Makingtour Travel company" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; margin-left: 0; margin-right: auto; max-width: 100%; outline: none; text-decoration: none; vertical-align: top; width: auto;"></a></span>
+                                    <img class="center-image" src="https://gallery.mailchimp.com/f93514d54fd2d25bb12b9860d/images/9d159ebf-81a5-4211-95dc-0739275ccc3c.png" width="210" height="59" alt="Makingtour Travel company" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; margin-left: 0; margin-right: auto; max-width: 100%; outline: none; text-decoration: none; vertical-align: top; width: auto;"></a></span>
                                     <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="0px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 0px; font-weight: 400; hyphens: auto; line-height: 0px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
-                                    <strong mc:edit="address1_header" style="color: #8b8b8b; font-weight: 300;">Офисы
+                                    <strong style="color: #8b8b8b; font-weight: 300;">Офисы
                                         продаж:</strong><br>
-                                    <a mc:edit="address1_tel1" class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                    <a class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
                                         8 800 800 025</a><br>
-                                    <a mc:edit="address1_tel2" class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 14px; font-weight: 300; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                    <a class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 14px; font-weight: 300; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
                                         звонки бесплатные по всей Украине, в т.ч. с мобильного</a><br>
-                                    <a mc:edit="address1_tel3" class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                    <a class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
                                         096 595 01 01</a><br>
-                                    <a mc:edit="address1_tel4" class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
+                                    <a class="footer__tel" style="Margin: 0; background: transparent; color: #8b8b8b; font-family: Arial,sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">
                                         099 644 50 55</a><br>
                                 </p>
-                                &nbsp;
                             </div>
                         </th></tr></table></th>
 
@@ -628,7 +688,7 @@
                     </tr></tbody></table>
 
 
-                    <table mc:repeatable="repeat_36" mc:variant="Разделитель2" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                    <table mc:repeatable="repeatable-block13" mc:repeatindex="0" mc:variant="Разделитель2" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                         <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 5px !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div style="text-align: center !important;">
                                 <div style="
@@ -646,8 +706,8 @@
                     </tr></tbody></table>
 
 
-                    <table mc:repeatable="repeat_37" mc:variant="Футер письма" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
+                    <table mc:repeatable="repeatable-block14" mc:repeatindex="0" mc:variant="Футер письма" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                        <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
                             <div style="text-align: center;">
                                 <p mc:edit="ftext1" style="Margin: 0; Margin-bottom: 10px; color: #6b6b6b; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">
                                     Вы видите это сообщение, потому что обращались в один из офисов
@@ -663,7 +723,7 @@
                                     чтобы не пропустить важные письма. Мы отвечаем за конфиденциальность данных и не
                                 </p>
 
-                                <p mc:edit="ftext3" style="Margin: 0; Margin-bottom: 10px; color: #6b6b6b; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">
+                                <p mc:edit="ftext3" style="Margin: 0; Margin-bottom: 10px; color: #6b6b6b; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; margin-bottom: 0; padding: 0; text-align: center;">
                                     Если Вы хотите отказаться от получения писем,
                                     <a href="#" style="Margin: 0; color: #ec008c; font-family: Arial,sans-serif; font-weight: 400; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: underline;">нажмите здесь</a>
                                 </p>
@@ -673,16 +733,16 @@
                     </tr></tbody></table>
 
 
-                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="15px" style="-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 15px; font-weight: 400; hyphens: auto; line-height: 15px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;">&#xA0;</td></tr></tbody></table> 
+                    <!--<spacer size="15"></spacer>-->
 
                     <!--Отписка-->
-                    <table mc:repeatable="repeat_38" mc:variant="Блок отписаться" mc:repeatindex="0" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                    <table mc:repeatable="repeatable-block15" mc:repeatindex="0" mc:variant="Блок отписаться" class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                         <th class="small-12 large-12 columns first last" style="Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;">
-                            <p style="Margin: 0; Margin-bottom: 10px; color: #fff; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; line-height: 20px; margin: 0; margin-bottom: 0; padding: 0; text-align: center;">
-                                <a mc:edit="unsubscribe" href="http://makintour.com/o_kompanii/" style="Margin: 0; color: #ec008c; font-family: Arial,sans-serif; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-align: left; text-decoration: underline;">отписаться от
+                            <p style="Margin: 0; Margin-bottom: 10px; color: #fff; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; line-height: 20px; margin: 0; margin-bottom: 0; padding: 0; text-align: center;" mc:edit="unsubscribe">
+                                <a href="http://makintour.com/o_kompanii/" style="Margin: 0; color: #ec008c; font-family: Arial,sans-serif; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-align: left; text-decoration: underline;">отписаться от
                                     рассылки</a>
-                                <span mc:edit="uline" style="color: #ec008c; text-decoration: none;"> | </span>
-                                <a mc:edit="uedit_data" href="http://makintour.com/kontakti/" style="Margin: 0; color: #ec008c; font-family: Arial,sans-serif; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-align: left; text-decoration: underline;">
+                                <span style="color: #ec008c; text-decoration: none;"> | </span>
+                                <a href="http://makintour.com/kontakti/" style="Margin: 0; color: #ec008c; font-family: Arial,sans-serif; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-align: left; text-decoration: underline;">
                                     редактировать
                                     свои данные</a>
                             </p>

@@ -1449,7 +1449,8 @@ table.button {
     width: 95% !important; }
   .top_logo_image {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    display: inline-block !important; }
   .contact {
     text-align: center !important; }
   .top_contacts {
@@ -1479,7 +1480,18 @@ table.button {
   .bottom-tel-containter {
     padding-bottom: 0 !important; }
   .th.small-12 {
-    max-width: 100% !important; } }
+    max-width: 100% !important; }
+  .country-price {
+    display: block !important;
+    text-align: center !important; }
+  .country-button {
+    display: block !important;
+    float: none !important;
+    text-align: center !important;
+    margin-right: auto !important; }
+  .country-button-container {
+    display: block !important;
+    float: none !important; } }
 
 .text-right {
   text-align: right; }
