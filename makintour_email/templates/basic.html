@@ -21,8 +21,7 @@
                 <container class="no-bg" style="width: 100%; !important; max-width: 580px !important;">
                     <!-- Шапка -->
                     <row mc:repeatable="repeat_2"
-                         mc:variant="Блок с верхним логотипом"
-                         mc:repeatindex="0">
+                         mc:variant="Блок с верхним логотипом">
                         <columns large="12" style="padding-bottom: 0 !important;">
                             <div style="text-align: center !important;">
                                 <div style="display: inline-block !important;
@@ -66,7 +65,7 @@
 
                     <row mc:repeatable="repeatable-block1"
                          mc:variant="Разделитель"
-                         mc:repeatindex="0">
+                         >
                         <columns small="12" large="12" style="padding-bottom: 5px !important;">
                             <div mc:edit="separate_line" style="text-align: center !important;">
                                 <div style="
@@ -85,16 +84,15 @@
                     </row>
 
                     <!-- Картинка 1 -->
-                    <row>
+                    <row  mc:repeatable="repeatable-block-r"
+                          mc:variant="Картинка и текст"
+                          >
                         <columns large="12" small="12" style="padding-bottom: 0 !important;">
                             <div style="text-align: center !important;">
                                 <div style="text-align: center !important;
                                 width:100%;
                                 vertical-align: top;
-                                /*margin-top: 20px;*/"
-                                     mc:repeatable="repeatable-block2"
-                                     mc:variant="Большая картинка"
-                                     mc:repeatindex="0">
+                                /*margin-top: 20px;*/">
                                     <img mc:edit="big_image1" style="display: block;
                                     width: 100%;"
                                          src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/cocktail.png"
@@ -112,9 +110,6 @@
                                  vertical-align: top;
                                  margin-top: 20px;
                                  color: #474747;"
-                                   mc:repeatable="repeatable1"
-                                   mc:variant="Блок текста"
-                                   mc:repeatindex="0"
                                    mc:edit="text1">Когда за окном пасмурно и холодно, все больше и приятней
                                     думается об отдыхе. Именно сейчас, в декабре, еще перед Новогодней суматохой
                                     и праздниками можно действительно выгодно отдохнуть.
@@ -129,8 +124,8 @@
                     <!--<spacer size="15"></spacer>-->
 
                     <!--Здесь пишем продающий заголовок-->
-                    <row mc:repeatable="repeatable-block3"
-                         mc:repeatindex="0"
+                    <row mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Продающий заголовок">
                         <columns small="12" large="12" style="padding-bottom: 0 !important;">
                             <h2 mc:edit="main_header" class="text-left sell-h" style="font-size: 35px; /*padding-left: 10px;*/
@@ -143,7 +138,7 @@
                     <!-- Картинка 2 -->
                     <!--<row mc:repeatable="repeat_25"
                          mc:variant="Большая картинка 2"
-                         mc:repeatindex="0">
+                         >
                         <columns large="12" small="12">
                             <div style="text-align: center !important;">
                                 <div style="text-align: center !important;
@@ -164,9 +159,9 @@
 
 
                     <!-- Текст -->
-                    <!--<row mc:repeatable="repeat_26"
-                         mc:variant="Блок текста 2"
-                         mc:repeatindex="0">
+                    <row  mc:repeatable="repeatable-block-r"
+                          
+                          mc:variant="Блок текста">
                         <columns small="12" large="6">
                             <p style="
                                 font-size: 14px;
@@ -181,20 +176,20 @@
                                 и температура удобна для отдыха. Ведь что может быть приятнее,
                                 чем переместиться из холода и непогоды на роскошный пляж в экзотической
                                 стране и получить заряд позитива и тепла перед долгой и холодной зимой?</p>
-                            &lt;!&ndash;</div>&ndash;&gt;
+                            <!--</div>-->
                         </columns>
-                    </row>-->
+                    </row>
 
-                    <div mc:repeatable="repeatable-block4"
-                         mc:repeatindex="0"
+                    <div mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Серый разделитель">
                         <hr>
                     </div>
 
 
                     <!--Плиточки-->
-                    <row mc:repeatable="repeatable-block5"
-                         mc:repeatindex="0"
+                    <row mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Блок с плиточками">
                         <columns small="12" large="12" style="padding-left: 0 !important; padding-right: 0 !important;">
                             <div style="text-align: center !important;">
@@ -291,8 +286,8 @@
 
                     <!--Цитата-->
                     <div style="background: #dbdbdb;"
-                         mc:repeatable="repeatable-block6"
-                         mc:repeatindex="0"
+                         mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Блок c цитатой">
                         <spacer size="15"></spacer>
                         <row>
@@ -323,8 +318,8 @@
 
                     <!--<spacer size="40"></spacer>-->
 
-                    <row mc:repeatable="repeatable-block7"
-                         mc:repeatindex="0"
+                    <row mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Блок со страной подробный">
                         <columns small="12" large="12" style="padding-left: 0 !important;
                          padding-right: 0 !important;
@@ -405,8 +400,8 @@
 
                     <!--Плиточки для стран-->
                     <!--1-->
-                    <div mc:repeatable="repeatable-block8"
-                         mc:repeatindex="0"
+                    <div mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Блок стран">
                         <row>
                             <columns small="12" large="12" style="padding-bottom: 0;">
@@ -471,8 +466,8 @@
                     </div>
                     <!--//Плиточки для стран-->
 
-                    <div mc:repeatable="repeatable-block9"
-                         mc:repeatindex="0"
+                    <div mc:repeatable="repeatable-block-r"
+                         
                          mc:variant="Что входит в стоимость">
                         <p mc:edit="little_text"
                            style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
@@ -482,8 +477,7 @@
                     </div>
 
                     <!--Кнопка-->
-                    <div mc:repeatable="repeatable-block10"
-                         mc:repeatindex="0"
+                    <div mc:repeatable="repeatable-block-r"
                          mc:variant="Кнопка">
                         <div mc:edit="button_text">
                             <a style="width: 180px;
@@ -506,9 +500,7 @@
 
                     <spacer size="20"></spacer>
                     <!--Форма поиска-->
-                    <div mc:repeatable="repeatable-block11"
-                         mc:repeatindex="0"
-                         mc:variant="Форма перехода">
+                    <div>
                         <div mc:edit="form_to_site">
                             <a href="http://makintour.com">
                                 <img style="margin-left: auto; margin-right: auto; width: 100%;"
@@ -520,9 +512,7 @@
 
                     <!--<spacer size="20"></spacer>-->
 
-                    <row mc:repeatable="repeatable-block12"
-                         mc:repeatindex="0"
-                         mc:variant="Контакты">
+                    <row>
                         <columns small="12" large="6" class="bottom-tel-containter" style="display: inline-block !important;
                         /*width: 254px !important;*/
                         padding-bottom: 0 !important;">
@@ -639,8 +629,7 @@
                     </row>
 
 
-                    <row mc:repeatable="repeatable-block13"
-                         mc:repeatindex="0"
+                    <row mc:repeatable="repeatable-block-r"
                          mc:variant="Разделитель2">
                         <columns small="12" large="12" style="padding-bottom: 5px !important;">
                             <div style="text-align: center !important;">
@@ -660,9 +649,7 @@
                     </row>
 
 
-                    <row mc:repeatable="repeatable-block14"
-                         mc:repeatindex="0"
-                         mc:variant="Футер письма">
+                    <row>
                         <columns style="padding-bottom: 0;">
                             <div style="text-align: center;">
                                 <p mc:edit="ftext1" style="text-align: center;
@@ -697,9 +684,7 @@
                     <!--<spacer size="15"></spacer>-->
 
                     <!--Отписка-->
-                    <row mc:repeatable="repeatable-block15"
-                         mc:repeatindex="0"
-                         mc:variant="Блок отписаться">
+                    <row>
                         <columns large="12" style="padding-bottom: 0;">
                             <p style="color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; font-size: 10px;"
                                mc:edit="unsubscribe">
