@@ -20,11 +20,12 @@
 
                 <container class="no-bg" style="width: 100%; !important; max-width: 580px !important;">
                     <!-- Шапка -->
-                    <row mc:repeatable="repeat_2"
-                         mc:variant="Блок с верхним логотипом">
-                        <columns large="12" style="padding-bottom: 0 !important;">
-                            <div style="text-align: center !important;">
-                                <div style="display: inline-block !important;
+                    <div mc:repeatable="repeat_2"
+                         mc:variant="Блок_с_верхним_логотипом">
+                        <row>
+                            <columns large="12" style="padding-bottom: 0 !important;">
+                                <div style="text-align: center !important;">
+                                    <div style="display: inline-block !important;
                                 width:50%;
                                 min-width: 210px;
                                 /*float: left;*/
@@ -32,108 +33,111 @@
                                 /*vertical-align: top;*/
                                 text-align: center !important;
                                 margin-top: 20px;"
-                                     class="top-image-size">
-                                    <a href="http://www.makintour.com">
-                                        <img mc:edit="top_logo_image" class="top_logo_image"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png"
-                                             alt="logo">
-                                    </a>
+                                         class="top-image-size">
+                                        <a href="http://www.makintour.com">
+                                            <img mc:edit="top_logo_image" class="top_logo_image"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/logo.png"
+                                                 alt="logo">
+                                        </a>
 
-                                </div>
-                                <!--</columns>-->
+                                    </div>
+                                    <!--</columns>-->
 
-                                <!--<columns large="5" class="custom-pb">-->
-                                <div class="top_contacts"
-                                     style="display: inline-block !important;width:50%;  min-width: 250px; float: right;">
-                                    <div mc:edit="top_contacts" class="contact"
-                                         style="text-align: right; margin-top: 20px;
+                                    <!--<columns large="5" class="custom-pb">-->
+                                    <div class="top_contacts"
+                                         style="display: inline-block !important;width:50%;  min-width: 250px; float: right;">
+                                        <div mc:edit="top_contacts" class="contact"
+                                             style="text-align: right; margin-top: 20px;
                                        color: #474747">Хотите на отдых?
-                                        <strong>Позвоните нам!</strong><br>
-                                        <div>
-                                            <img style="display: inline-block;
+                                            <strong>Позвоните нам!</strong><br>
+                                            <div>
+                                                <img style="display: inline-block;
                                         position: relative;
                                         /*top: 2px*/
                                         vertical-align: text-bottom;"
-                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/tel.png">
-                                            <span style="font-size: 19px; font-weight: 700; color: #ec008c;">&nbsp;0 800 800 025</span><br>
-                                        </div>
-                                        <strong>Звонки бесплатные по всей Украине</strong></div>
+                                                     src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/tel.png">
+                                                <span style="font-size: 19px; font-weight: 700; color: #ec008c;">&nbsp;0 800 800 025</span><br>
+                                            </div>
+                                            <strong>Звонки бесплатные по всей Украине</strong></div>
+                                    </div>
                                 </div>
-                            </div>
-                        </columns>
-                    </row>
+                            </columns>
+                        </row>
+                    </div>
 
-                    <row mc:repeatable="repeatable-block1"
-                         mc:variant="Разделитель"
-                         >
-                        <columns small="12" large="12" style="padding-bottom: 5px !important;">
-                            <div mc:edit="separate_line" style="text-align: center !important;">
-                                <div style="
+                    <div mc:repeatable="repeatable-block1"
+                         mc:variant="Разделитель">
+                        <row>
+                            <columns small="12" large="12" style="padding-bottom: 5px !important;">
+                                <div mc:edit="separate_line" style="text-align: center !important;">
+                                    <div style="
                             display: inline-block;
                             background: #fff;
                              width: 100%;
                               /*max-width: 240px;*/
                               max-width: 580px;
                               /*padding: 10px;*/">
-                                    <img style="width: 100% !important"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/separate.png"
-                                         alt="photo-small">
+                                        <img style="width: 100% !important"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/separate.png"
+                                             alt="photo-small">
+                                    </div>
                                 </div>
-                            </div>
-                        </columns>
-                    </row>
+                            </columns>
+                        </row>
+                    </div>
 
                     <!-- Картинка 1 -->
-                    <row  mc:repeatable="repeatable-block-r"
-                          mc:variant="Картинка и текст"
-                          >
-                        <columns large="12" small="12" style="padding-bottom: 0 !important;">
-                            <div style="text-align: center !important;">
-                                <div style="text-align: center !important;
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Картинка_и_текст">
+                        <row>
+                            <columns large="12" small="12" style="padding-bottom: 0 !important;">
+                                <div style="text-align: center !important;" mc:edit="big_image_and_text">
+                                    <div style="text-align: center !important;
                                 width:100%;
                                 vertical-align: top;
                                 /*margin-top: 20px;*/">
-                                    <img mc:edit="big_image1" style="display: block;
+                                        <img style="display: block;
                                     width: 100%;"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/cocktail.png"
-                                         alt="user">
-                                    <img mc:edit="underline_image1" style="display: block;
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/cocktail.png"
+                                             alt="user">
+                                        <img style="display: block;
                                     width: 100%;"
-                                         src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png"
-                                         alt="underline">
-                                </div>
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png"
+                                             alt="underline">
+                                    </div>
 
-                                <p style="font-size: 14px;
+                                    <p style="font-size: 14px;
                                  line-height: 20px;
                                  display: inline-block;
                                  width:100%;
                                  vertical-align: top;
                                  margin-top: 20px;
-                                 color: #474747;"
-                                   mc:edit="text1">Когда за окном пасмурно и холодно, все больше и приятней
-                                    думается об отдыхе. Именно сейчас, в декабре, еще перед Новогодней суматохой
-                                    и праздниками можно действительно выгодно отдохнуть.
-                                    Мы подготовили для Вас ТОП-5 самых выгодных и ярких направлений отдыха,
-                                    куда можно отправится в ближайшее время и зарядится
-                                    положительными эмоциями на всю зиму!</p>
-                            </div>
-                        </columns>
-                    </row>
+                                 color: #474747;">Когда за окном пасмурно и холодно, все больше и приятней
+                                        думается об отдыхе. Именно сейчас, в декабре, еще перед Новогодней суматохой
+                                        и праздниками можно действительно выгодно отдохнуть.
+                                        Мы подготовили для Вас ТОП-5 самых выгодных и ярких направлений отдыха,
+                                        куда можно отправится в ближайшее время и зарядится
+                                        положительными эмоциями на всю зиму!</p>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
 
 
                     <!--<spacer size="15"></spacer>-->
 
                     <!--Здесь пишем продающий заголовок-->
-                    <row mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Продающий заголовок">
-                        <columns small="12" large="12" style="padding-bottom: 0 !important;">
-                            <h2 mc:edit="main_header" class="text-left sell-h" style="font-size: 35px; /*padding-left: 10px;*/
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Продающий_заголовок">
+                        <row>
+                            <columns small="12" large="12" style="padding-bottom: 0 !important;">
+                                <h2 mc:edit="main_header" class="text-left sell-h" style="font-size: 35px; /*padding-left: 10px;*/
                             text-align: center;
                             color: #ec008c;
                             font-weight: 300;">Здесь пишем продающий заголовок</h2>
-                        </columns>
-                    </row>
+                            </columns>
+                        </row>
+                    </div>
 
                     <!-- Картинка 2 -->
                     <!--<row mc:repeatable="repeat_25"
@@ -159,11 +163,11 @@
 
 
                     <!-- Текст -->
-                    <row  mc:repeatable="repeatable-block-r"
-                          
-                          mc:variant="Блок текста">
-                        <columns small="12" large="6">
-                            <p style="
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Блок_текста">
+                        <row>
+                            <columns small="12" large="6">
+                                <p style="
                                 font-size: 14px;
                                 line-height: 20px;
                                 max-width: 580px;
@@ -171,56 +175,60 @@
                                 margin-right: auto;
                                 text-align: left;
                                 color: #474747;"
-                               mc:edit="text2">Египет — одно из самых популярных направлений среди украинцев.
-                                Декабрь – месяц комфортного и спокойного отдыха в Египте, когда нет летнего зноя
-                                и температура удобна для отдыха. Ведь что может быть приятнее,
-                                чем переместиться из холода и непогоды на роскошный пляж в экзотической
-                                стране и получить заряд позитива и тепла перед долгой и холодной зимой?</p>
-                            <!--</div>-->
-                        </columns>
-                    </row>
+                                   mc:edit="text2">Египет — одно из самых популярных направлений среди украинцев.
+                                    Декабрь – месяц комфортного и спокойного отдыха в Египте, когда нет летнего зноя
+                                    и температура удобна для отдыха. Ведь что может быть приятнее,
+                                    чем переместиться из холода и непогоды на роскошный пляж в экзотической
+                                    стране и получить заряд позитива и тепла перед долгой и холодной зимой?</p>
+                                <!--</div>-->
+                            </columns>
+                        </row>
+                    </div>
 
-                    <div mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Серый разделитель">
-                        <hr>
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Серый_разделитель">
+                        <row>
+                            <columns>
+                                <hr>
+                            </columns>
+                        </row>
                     </div>
 
 
                     <!--Плиточки-->
-                    <row mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Блок с плиточками">
-                        <columns small="12" large="12" style="padding-left: 0 !important; padding-right: 0 !important;">
-                            <div style="text-align: center !important;">
-                                <div style="
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Блок_с_плиточками">
+                        <row>
+                            <columns small="12" large="12"
+                                     style="padding-left: 0 !important; padding-right: 0 !important;">
+                                <div style="text-align: center !important;" mc:edit="country_1_2">
+                                    <div style="
                             display: inline-block;
                             background: #fff;
                              width: 100%;
                               max-width: 275px;
                               padding: 5px;">
-                                    <div style="border: 1px solid #c6c6c6;
+                                        <div style="border: 1px solid #c6c6c6;
                               border-radius: 4px;
                               padding-bottom: 23px;">
-                                        <img mc:edit="country_1_image" style="width: 100% !important"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <p style="text-align: center;
+                                            <img style="width: 100% !important"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <p style="text-align: center;
                                     font-size: 17px;
-                                    margin-bottom: 5px;" mc:edit="country_1_town"><strong>
-                                            Xperience Kiroseiz Parkland 5*
-                                        </strong></p>
-                                        <div style="text-align: center;
-                                    line-height: 17px;"
-                                             mc:edit="country_1_description">
-                                            8 дней<br>
-                                            Все включено<br>
-                                            <spacer size="5"></spacer>
-                                            <p style="font-size: 35px; color: #00aeef;
+                                    margin-bottom: 5px;"><strong>
+                                                Xperience Kiroseiz Parkland 5*
+                                            </strong></p>
+                                            <div style="text-align: center;
+                                    line-height: 17px;">
+                                                8 дней<br>
+                                                Все включено<br>
+                                                <spacer size="5"></spacer>
+                                                <p style="font-size: 35px; color: #00aeef;
                                         text-align: center;
                                         line-height: 40px;">195$</p>
-                                            <a style="width: 142px;
+                                                <a style="width: 142px;
                                         display: block;
                                         margin-left: auto;
                                         margin-right: auto;
@@ -232,39 +240,38 @@
                                         padding: 8px;
                                         padding-top: 10px;
                                         text-align: center;" href="#">Заказать
-                                            </a>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div style="
+                                    <div style="
                             display: inline-block;
                             background: #fff;
                              width: 100%;
                               max-width: 275px;
                               padding: 5px;">
-                                    <div style="border: 1px solid #c6c6c6;
+                                        <div style="border: 1px solid #c6c6c6;
                               border-radius: 4px;
                               padding-bottom: 23px;">
-                                        <img mc:edit="country_2_image" style="width: 100% !important"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
-                                             alt="photo-small">
-                                        <spacer size="10"></spacer>
-                                        <p style="text-align: center;
+                                            <img style="width: 100% !important"
+                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
+                                                 alt="photo-small">
+                                            <spacer size="10"></spacer>
+                                            <p style="text-align: center;
                                     font-size: 17px;
-                                    margin-bottom: 5px;" mc:edit="country_2_town"><strong>
-                                            Xperience Kiroseiz Parkland 5*
-                                        </strong></p>
-                                        <div style="text-align: center;
-                                    line-height: 17px;"
-                                             mc:edit="country_2_description">
-                                            8 дней<br>
-                                            Все включено<br>
-                                            <spacer size="5"></spacer>
-                                            <p style="font-size: 35px; color: #00aeef;
+                                    margin-bottom: 5px;"><strong>
+                                                Xperience Kiroseiz Parkland 5*
+                                            </strong></p>
+                                            <div style="text-align: center;
+                                    line-height: 17px;">
+                                                8 дней<br>
+                                                Все включено<br>
+                                                <spacer size="5"></spacer>
+                                                <p style="font-size: 35px; color: #00aeef;
                                         text-align: center;
                                         line-height: 40px;">195$</p>
-                                            <a style="width: 142px;
+                                                <a style="width: 142px;
                                         display: block;
                                         margin-left: auto;
                                         margin-right: auto;
@@ -276,66 +283,67 @@
                                         padding: 8px;
                                         padding-top: 10px;
                                         text-align: center;" href="#">Заказать
-                                            </a>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </columns>
-                    </row>
+                            </columns>
+                        </row>
+                    </div>
 
                     <!--Цитата-->
                     <div style="background: #dbdbdb;"
-                         mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Блок c цитатой">
+                         mc:repeatable="repeatable block"
+                         mc:variant="Блок_c_цитатой">
                         <spacer size="15"></spacer>
                         <row>
-                            <div>
-                                <columns large="12" style="padding-bottom: 0;">
-                                    <div>
-                                        <div style="width: 3%; display: inline-block;
+                            <columns large="12" style="padding-bottom: 0;">
+                                <div>
+                                    <div style="width: 3%; display: inline-block;
                                         padding-left: 10px;
                                     vertical-align: top;">
-                                            <img mc:edit="quote_image"
-                                                 src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/quote.png">
-                                        </div>
-                                        <div style="display: inline-block;
+                                        <img mc:edit="quote_image"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/quote.png">
+                                    </div>
+                                    <div style="display: inline-block;
                                         width: 93%;">
-                                            <p style="padding-left: 16px; margin-bottom: 0;
+                                        <p style="padding-left: 16px; margin-bottom: 0;
                                             font-size: 17px;
                                             color: #454545;" class="quote-block-mail"
-                                               mc:edit="quote_text"><i>Порой отдых может стать делом <strong>всей
-                                                твоей жизни!</strong>
-                                                Напишем сюда еще какую-то цитату</i></p>
-                                        </div>
+                                           mc:edit="quote_text"><i>Порой отдых может стать делом <strong>всей
+                                            твоей жизни!</strong>
+                                            Напишем сюда еще какую-то цитату</i></p>
                                     </div>
-                                </columns>
-                            </div>
+                                </div>
+                            </columns>
                         </row>
-                        <spacer size="15"></spacer>
                     </div>
 
+                    <!--<spacer size="15"></spacer>-->
                     <!--<spacer size="40"></spacer>-->
 
-                    <row mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Блок со страной подробный">
-                        <columns small="12" large="12" style="padding-left: 0 !important;
-                         padding-right: 0 !important;
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Блок_со_страной_подробный">
+                        <row>
+                            <columns small="12" large="12" style="padding-left: 0 !important;
+                         padding-бright: 0 !important;
                          padding-bottom: 0 !important;">
-                            <div mc:edit="title_country_m">
-                                <spacer size="20"></spacer>
-                                <p class="text-left" style="font-size: 45px;
+                                <div mc:edit="big_country">
+                                    <!--<div>-->
+                                    <!--<spacer size="20"></spacer>-->
+                                    <p class="text-left" style="font-size: 45px;
                             text-align: center;
                             color: #ec008c;
-                            font-weight: 300;">ОАЭ</p>
-                            </div>
-                            <spacer size="10"></spacer>
-                            <div style=" border: 1px solid #c6c6c6;
+                            font-weight: 300;
+                            padding-top: 20px;
+                            padding-bottom: 10px;">ОАЭ</p>
+                                    <!--</div>-->
+                                    <!--<spacer size="10"></spacer>-->
+                                    <div style=" border: 1px solid #c6c6c6;
                               border-radius: 4px;">
-                                <div>
-                                    <div style="
+                                        <div>
+                                            <div style="
                             display: block;
                             background: transparent;
                              width: 100%;
@@ -343,12 +351,12 @@
                               max-width: 600px;
                               /*padding: 10px;*/
                               /*padding-top: 10px;*/">
-                                        <img mc:edit="big_photo" style="width: 100% !important;"
-                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo2.png"
-                                             alt="photo-small">
-                                    </div>
+                                                <img style="width: 100% !important;"
+                                                     src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo2.png"
+                                                     alt="photo-small">
+                                            </div>
 
-                                    <p style="font-size: 14px;
+                                            <p style="font-size: 14px;
                                  line-height: 20px;
                                  display: inline-block;
                                  vertical-align: top;
@@ -356,56 +364,65 @@
                                  color: #474747;
                                  text-align: center;
                                  padding-left: 20px;
-                                 padding-right: 20px;"
-                                       mc:edit="text3">Туры в ОАЭ – это незабываемый сказочный отдых в стране
-                                        будущего, это яркое солнце 365 дней в году и теплое чистое море,
-                                        завораживающие пейзажи пустыни с оазисами и высокими песчаными дюнами
-                                        (в каждом эмирате свой </p>
-                                    <spacer size="10"></spacer>
-                                    <p class="country-price" mc:edit="country_main_price" style="font-size: 35px; color: #00aeef;
+                                 padding-right: 20px;">Туры в ОАЭ – это незабываемый сказочный отдых в стране
+                                                будущего, это яркое солнце 365 дней в году и теплое чистое море,
+                                                завораживающие пейзажи пустыни с оазисами и высокими песчаными дюнами
+                                                (в каждом эмирате свой </p>
+                                            <spacer size="10"></spacer>
+                                            <p class="country-price" style="font-size: 35px; color: #00aeef;
                                         line-height: 35px;
                                         display: inline-block;
                                         vertical-align: top;
                                         margin-left: 20px;
                                         margin-right: auto;">
-                                        <span style="font-size: 25px">от</span> 342
-                                        <span style="font-size: 25px">$</span></p>
-                                    <div class="country-button-container" style="display: inline-block;
+                                                <a style="text-decoration: none !important; color: #00aeef !important;"
+                                                   href="#">
+                                                    <span style="font-size: 25px">от</span> 342
+                                                    <span style="font-size: 25px">$</span>
+                                                </a>
+                                            </p>
+                                            <div class="country-button-container country-button"
+                                                 style="
                                         float: right;
-                                        vertical-align: top;">
-                                        <span class="country-button" mc:edit="button_text_main_country" style="width: 180px;
+                                        vertical-align: top;
+                                        width: 180px;
                                         display: block;
                                         margin-left: auto;
                                         margin-right: 20px;
                                         background: #00aeef;
-                                        color: #ffffff;
+                                        color: #ffffff !important;
                                         font-size: 18px;
                                         border-radius: 5px;
                                         text-decoration: none;
                                         padding: 8px;
                                         padding-top: 10px;
                                         text-align: center;
-                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)">Хочу в ОАЭ
-                                        </span>
+                                        text-decoration: none!important;
+                                        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)">
+                                                <a style="text-decoration: none!important; color: #fff!important;"
+                                                   class="country-button"
+                                                   href="#">Хочу в ОАЭ
+                                                </a>
+                                            </div>
+                                            <spacer size="30"></spacer>
+                                        </div>
                                     </div>
-                                    <spacer size="30"></spacer>
+                                    <spacer size="20"></spacer>
                                 </div>
-                            </div>
-                            <spacer size="20"></spacer>
-                        </columns>
-                    </row>
+                            </columns>
+                        </row>
+                    </div>
 
                     <!--<spacer size="30"></spacer>-->
 
 
                     <!--Плиточки для стран-->
                     <!--1-->
-                    <div mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Блок стран">
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Блок_стран">
                         <row>
                             <columns small="12" large="12" style="padding-bottom: 0;">
-                                <div style="/*text-align: center !important;*/">
+                                <div style="/*text-align: center !important;*/" mc:edit="min_country_1_2">
                                     <div style="
                               display: inline-block;
                               background: #fff;
@@ -415,15 +432,17 @@
                               padding-left: 0;">
                                         <div style="width: 47%; display: inline-block; padding-right: 2%;">
                                             <h2 class="country-title" style="text-align: center;
-                                            font-size: 20px;" mc:edit="min_country_1">Шри Ланка</h2>
+                                            font-size: 20px;">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                                 mc:edit="min_country_1_image"
                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
                                                  alt="photo-small">
                                             <spacer size="10"></spacer>
-                                            <span mc:edit="min_country_1_price" style="max-width: 100% !important;
+                                            <div>
+                                                <a style="text-decoration: none !important; color: #fff !important;"
+                                                   href="#">
+                                            <span style="max-width: 100% !important;
                                         background: #00aeef;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -433,20 +452,24 @@
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$
                                             </span>
+                                                </a>
+                                            </div>
                                             <spacer size="10"></spacer>
                                         </div>
 
                                         <div style="width: 47%; display: inline-block; padding-right: 2%;">
                                             <h2 class="country-title" style="text-align: center;
-                                            font-size: 20px;" mc:edit="min_country_2">Шри Ланка</h2>
+                                            font-size: 20px;">Шри Ланка</h2>
                                             <spacer size="10"></spacer>
                                             <img style="width: 100% !important;
                                     border-radius: 5px;"
-                                                 mc:edit="min_country_2_image"
                                                  src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/photo1.png"
                                                  alt="photo-small">
                                             <spacer size="10"></spacer>
-                                            <span mc:edit="min_country_2_price" style="max-width: 100% !important;
+                                            <div>
+                                                <a style="text-decoration: none !important; color: #fff !important;"
+                                                   href="#">
+                                            <span style="max-width: 100% !important;
                                         background: #00aeef;
                                         color: #ffffff;
                                         font-size: 14px;
@@ -456,6 +479,8 @@
                                         padding: 7px;
                                         text-align: center;" href="#">от 350$
                                             </span>
+                                                </a>
+                                            </div>
                                             <spacer size="10"></spacer>
                                         </div>
                                     </div>
@@ -466,21 +491,27 @@
                     </div>
                     <!--//Плиточки для стран-->
 
-                    <div mc:repeatable="repeatable-block-r"
-                         
-                         mc:variant="Что входит в стоимость">
-                        <p mc:edit="little_text"
-                           style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
-                            * Цена указана за одного человека при двухместном размещении.
-                            <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной системы.
-                        </p>
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Что_входит_в_стоимость">
+                        <row>
+                            <columns>
+                                <p mc:edit="little_text"
+                                   style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
+                                    * Цена указана за одного человека при двухместном размещении.
+                                    <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной
+                                    системы.
+                                </p>
+                            </columns>
+                        </row>
                     </div>
 
                     <!--Кнопка-->
-                    <div mc:repeatable="repeatable-block-r"
+                    <div mc:repeatable="repeatable block"
                          mc:variant="Кнопка">
-                        <div mc:edit="button_text">
-                            <a style="width: 180px;
+                        <row>
+                            <columns>
+                                <div mc:edit="button_text">
+                                    <a style="width: 180px;
                                         display: block;
                                         background: #00aeef;
                                         margin-right: auto;
@@ -493,20 +524,27 @@
                                         padding-top: 10px;
                                         text-align: center;
                                         box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.75)"
-                               href="http://www.makintour.com/">Перейти на сайт
-                            </a>
-                        </div>
+                                       href="http://www.makintour.com/">Перейти на сайт
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
                     </div>
 
-                    <spacer size="20"></spacer>
+                    <!--<spacer size="20"></spacer>-->
                     <!--Форма поиска-->
-                    <div>
-                        <div mc:edit="form_to_site">
-                            <a href="http://makintour.com">
-                                <img style="margin-left: auto; margin-right: auto; width: 100%;"
-                                     src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png"
-                                     alt="makintour.com"></a>
-                        </div>
+                    <div mc:repeatable="repeatable block"
+                         mc:variant="Форма">
+                        <row>
+                            <columns>
+                                <div mc:edit="form_to_site">
+                                    <a href="http://makintour.com">
+                                        <img style="margin-left: auto; margin-right: auto; width: 100%;"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/form.png"
+                                             alt="makintour.com"></a>
+                                </div>
+                            </columns>
+                        </row>
                     </div>
 
 
@@ -520,16 +558,17 @@
                                 <spacer size="5"></spacer>
                                 <p style="color: #363735; padding: 10px 0 30px; font: 14px/1 Calibri, Arial, sans-serif;
                                 margin-bottom: 5px;" class="mob-center text-left bottom-tel-logo" mc:edit="address1">
-                                <span class="logo" style="font-size: 16px; line-height: 1.2; color: #b1b1b1;"><a href=""
-                                                                                                                 style="text-decoration: none; color: #b1b1b1; background: transparent;">
+                                <span class="logo" style="font-size: 16px; line-height: 1.2; color: #b1b1b1;">
+                                    <a href="" style="text-decoration: none; color: #b1b1b1; background: transparent;">
                                     <img class="center-image"
                                          src="https://gallery.mailchimp.com/f93514d54fd2d25bb12b9860d/images/9d159ebf-81a5-4211-95dc-0739275ccc3c.png"
                                          width="210" height="59" alt="Makingtour Travel company"
                                          style="text-decoration: none;
                                           vertical-align: top;
                                            max-width: 100%; border: none;
-                                         margin-left: 0;
-                                         "></a></span>
+                                         margin-left: 0;">
+                                </a>
+                                </span>
                                     <spacer size="0"></spacer>
                                     <strong style="color: #8b8b8b; font-weight: 300;">Офисы
                                         продаж:</strong><br>
@@ -629,8 +668,7 @@
                     </row>
 
 
-                    <row mc:repeatable="repeatable-block-r"
-                         mc:variant="Разделитель2">
+                    <row>
                         <columns small="12" large="12" style="padding-bottom: 5px !important;">
                             <div style="text-align: center !important;">
                                 <div style="
@@ -674,7 +712,8 @@
                                 color: #6b6b6b;
                                 margin-bottom: 0;">
                                     Если Вы хотите отказаться от получения писем,
-                                    <a href="#" style="text-decoration: underline; color: #ec008c;">нажмите здесь</a>
+                                    <a href="*|UNSUB|*" style="text-decoration: underline; color: #ec008c;">нажмите
+                                        здесь</a>
                                 </p>
                             </div>
                         </columns>
@@ -688,11 +727,11 @@
                         <columns large="12" style="padding-bottom: 0;">
                             <p style="color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; font-size: 10px;"
                                mc:edit="unsubscribe">
-                                <a href="http://makintour.com/o_kompanii/"
+                                <a href="*|UNSUB|*"
                                    style="color: #ec008c; line-height: 20px; text-decoration: underline;">отписаться от
                                     рассылки</a>
                                 <span style="color: #ec008c; text-decoration: none;"> | </span>
-                                <a href="http://makintour.com/kontakti/"
+                                <a href="http://makintour.us12.list-manage.com/profile?u=f93514d54fd2d25bb12b9860d&id=46f9f4fd80&e=[UNIQID]"
                                    style="color: #ec008c; line-height: 20px; text-decoration: underline;">
                                     редактировать
                                     свои данные</a>
