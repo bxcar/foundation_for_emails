@@ -90,7 +90,7 @@
 
                     <!-- Картинка 1 -->
                     <div mc:repeatable="repeatable_block"
-                         mc:variant="Картинка_и_текст">
+                         mc:variant="Картинка">
                         <row>
                             <columns large="12" small="12" style="padding-bottom: 0 !important;">
                                 <div style="text-align: center !important;" mc:edit="big_image_and_text">
@@ -103,12 +103,13 @@
                                              src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/cocktail.png"
                                              alt="user">
                                         <img style="display: block;
-                                    width: 100%;"
+                                    width: 100%;
+                                    padding-bottom: 10px;"
                                              src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/main_logo_underline.png"
                                              alt="underline">
                                     </div>
 
-                                    <p style="font-size: 14px;
+                                    <!--<p style="font-size: 14px;
                                  line-height: 20px;
                                  display: inline-block;
                                  width:100%;
@@ -119,12 +120,48 @@
                                         и праздниками можно действительно выгодно отдохнуть.
                                         Мы подготовили для Вас ТОП-5 самых выгодных и ярких направлений отдыха,
                                         куда можно отправится в ближайшее время и зарядится
-                                        положительными эмоциями на всю зиму!</p>
+                                        положительными эмоциями на всю зиму!</p>-->
                                 </div>
                             </columns>
                         </row>
                     </div>
 
+                    <!-- Картинка 1 -->
+                    <div mc:repeatable="repeatable_block"
+                         mc:variant="Картинка_и_текст">
+                        <row>
+                            <columns large="12" small="12" style="padding-bottom: 0 !important;">
+                                <div style="text-align: center !important;" mc:edit="left_image">
+                                    <div style="text-align: center !important;
+                                display: inline-block !important;
+                                width:100%;
+                                max-width: 184px;
+                                vertical-align: top;
+                                /*margin-top: 20px;*/">
+                                        <img mc:edit="left_image" style="display: inline-block;"
+                                             src="http://coralborispol.com/wp-content/themes/sydney/img/chimp/man-user.png"
+                                             alt="user">
+                                    </div>
+                                    <!--</columns>-->
+
+                                    <p style="font-size: 14px;
+                                 line-height: 20px;
+                                 display: inline-block;
+                                 width:100%;
+                                 color: #474747;
+                                 max-width: 350px;
+                                 vertical-align: top;
+                                 margin-top: 20px"
+                                       mc:edit="right_text">Туристическая компания - это в первую очередь
+                                        Команда заряженных и любящих свою работу
+                                        профессионалов в области организации путешествий и создания впечатлений!
+                                        Согласитесь, так трудно найти надёжную, стабильную и близкую по духу компанию,
+                                        которой хотелось бы доверять приятные и захватывающие моменты жизни.
+                                    </p>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
 
                     <!--<spacer size="15"></spacer>-->
 
@@ -133,10 +170,11 @@
                          mc:variant="Продающий_заголовок">
                         <row>
                             <columns small="12" large="12" style="padding-bottom: 0 !important;">
-                                <h2 mc:edit="main_header" class="text-left sell-h" style="font-size: 35px; /*padding-left: 10px;*/
+                                <h2 mc:edit="main_header" class="text-left sell-h" style="font-size: 35px; line-height: 35px !important; /*padding-left: 10px;*/
                             text-align: center;
                             color: #ec008c;
-                            font-weight: 300;">Здесь пишем продающий заголовок</h2>
+                            font-weight: 300;
+                            padding-bottom: 10px;">Здесь пишем продающий заголовок</h2>
                             </columns>
                         </row>
                     </div>
@@ -190,8 +228,8 @@
                     <div mc:repeatable="repeatable_block"
                          mc:variant="Серый_разделитель">
                         <row>
-                            <columns small="12" large="12" style="width: 100% !important; padding-bottom: 0 !important;">
-                                <hr>&nbsp;
+                            <columns style="width: 100% !important; padding-bottom: 0 !important; height: 1px;">
+                                <div style="width: 100%; height: 1px; border-top: 1px solid #ababab; padding-bottom: 5px;">&nbsp;</div>
                             </columns>
                         </row>
                     </div>
@@ -501,8 +539,7 @@
                             <columns>
                                 <p mc:edit="little_text"
                                    style="margin-left: auto; margin-right: auto; width: 85%; text-align: center; font-size: 9px; line-height: 10px; color: #707070">
-                                    * Цена указана за одного человека при двухместном размещении.
-                                    <br>В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной
+                                    * Цена указана за одного человека при двухместном размещении. В стоимость включены перелет, размещение в отеле, трансфер, питание выбранной
                                     системы.
                                 </p>
                             </columns>
@@ -614,8 +651,18 @@
                                 </div>
                                 <div>
                                     <p style="color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
+                                        <a mc:edit="address2_inst"
+                                           href="https://www.instagram.com/makintour/" target="_blank"
+                                           style="text-decoration: none; color: #2f86b3; background: transparent;"
+                                           title="instagram"><img
+                                                alt="facebook"
+                                                src="http://coralborispol.com/wp-content/themes/sydney/img/img_email_mk/inst.png"
+                                                style="text-decoration: none; vertical-align: top; max-width: 100%; border: none;"
+                                                ></a>
+                                    </p>
+                                    <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_fb"
-                                           href=""
+                                           href="https://www.facebook.com/my.makintour" target="_blank"
                                            style="text-decoration: none; color: #2f86b3; background: transparent;"
                                            title="facebook"><img
                                                 alt="facebook" height="36"
@@ -625,7 +672,7 @@
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_vk"
-                                           href=""
+                                           href="https://vk.com/makintour" target="_blank"
                                            style="text-decoration: none; color: #2f86b3; background: transparent;"
                                            title="vkontakte"><img
                                                 alt="vkontakte" height="36"
@@ -635,7 +682,7 @@
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_gg"
-                                           href=""
+                                           href="https://plus.google.com/117054385108175084294?hl=ru" target="_blank"
                                            style="text-decoration: none; color: #2f86b3; background: transparent;"
                                            title="google+"><img
                                                 alt="google+" height="36"
@@ -647,7 +694,7 @@
                                     </p>
                                     <p style="padding-left: 6px; color: #353434; display: inline-block; font: 14px Calibri, Arial, sans-serif; line-height: 1.214;">
                                         <a mc:edit="address2_ok"
-                                           href=""
+                                           href="https://ok.ru/makintour" target="_blank"
                                            style="text-decoration: none; color: #2f86b3; background: transparent;"
                                            title="odnoklassniki">
                                             <img alt="odnoklassniki" height="36"
